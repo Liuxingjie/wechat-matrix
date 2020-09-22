@@ -1,0 +1,7 @@
+/* pages/test/test.wxss */
+
+view{
+  font-size: 50rpx;
+  color:red;
+  padding:30rpx;
+}

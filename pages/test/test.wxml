@@ -1,0 +1,6 @@
+<!-- 模拟接口测试 -->
+<view>
+  <view bindtap="toTest">
+    接口请求
+  </view>
+</view>
