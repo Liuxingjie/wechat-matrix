@@ -1,6 +1,36 @@
 <!--pages/my/my.wxml-->
 <cu-custom  color="#000000"><view slot="content">个人中心</view></cu-custom>
 
+<view class="myBox">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <view class="userDetail"  wx:else>
+      <view class="userHeader">
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <view class="userTitle">
+          <view class="userinfo-title">{{userInfo.nickName}}</view>
+          <view class="userinfo-nickname">昵称：{{userInfo.nickName}}</view>
+        </view>
+        <view>
+        </view>
+      </view>
 
+      <view class="previewBox">
+        <view class="pItem">
+          <view class="number">3</view>
+          <view class="title">发起的投票</view>
+        </view>
+        <view class="pItem">
+          <view class="number">12</view>
+          <view class="title">报名的投票</view>
+        </view>
+        <view class="pItem">
+          <view class="number">0</view>
+          <view class="title">参与的投票</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
 
 <bottomBar active="my"/>
