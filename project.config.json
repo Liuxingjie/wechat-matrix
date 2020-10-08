@@ -27,7 +27,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.13.0",
 	"appid": "wxbfa5b70170c1c717",
-	"projectname": "miniprogram-2",
+	"projectname": "%E6%8A%95%E7%A5%A8%E5%90%A7",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -62,6 +62,13 @@
 					"id": -1,
 					"name": "pages/test/test",
 					"pathName": "pages/test/test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/home/home",
+					"pathName": "pages/home/home",
 					"scene": null
 				}
 			]

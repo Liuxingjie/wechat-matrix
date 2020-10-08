@@ -1,0 +1,4 @@
+<cu-custom  color="#000000"><view slot="content">首页</view></cu-custom>
+<view>
+ <bottomBar active="home"/>
+</view>

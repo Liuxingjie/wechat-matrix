@@ -1,0 +1,6 @@
+<!--pages/my/my.wxml-->
+<cu-custom  color="#000000"><view slot="content">个人中心</view></cu-custom>
+
+
+
+<bottomBar active="my"/>

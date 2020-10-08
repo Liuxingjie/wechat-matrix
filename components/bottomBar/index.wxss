@@ -1,0 +1,27 @@
+/* components/bottomBar/index.wxss */
+
+.bottomBar{
+  width:100%;
+  height:100rpx;
+  display: flex;
+  font-size: 20rpx;
+  position:fixed;
+  bottom:0;
+  z-index: 1000;
+}
+.barItem{
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.barItem image{
+  width:44rpx;
+  height:44rpx;
+  background-color: red;
+  margin-bottom:10rpx;
+}
+.nativeItem{
+  color:#348AFF;
+}
