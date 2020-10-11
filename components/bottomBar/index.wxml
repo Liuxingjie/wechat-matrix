@@ -1,7 +1,7 @@
 
 <view class="bottomBar">
   <view wx:for='{{list}}' style="width:{{100/list.length}}%" bindtap="toDetail" data-item="{{item}}"  class="['barItem',{{item.isCenter?'barItemCenter':''}},{{item.name==active?'nativeItem':''}}]">
-    <image src="{{item.imgUrl}}" />
+    <image src="{{item.name==active ? item.activeUrl: item.imgUrl}}" />
     <text>{{item.title}}</text>
   </view>
 </view>

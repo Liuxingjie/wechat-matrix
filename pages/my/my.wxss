@@ -1,10 +1,27 @@
 
+.getUserBtn{
+  background:none;
+  margin-top: 100rpx;
+  border:1px solid #ffffff;
+  color:#ffffff;
+}
 .userinfo {
   width:100%;
   height: 386rpx;
+  position: relative;
   background: linear-gradient(-74deg, #0462FB, #5414E4);
+  overflow: hidden;
 }
-
+/* .redius{
+  width:140%;
+  height:0;
+  position:absolute;
+  left: -20%;
+  bottom:0;
+  z-index: 10;
+  border-radius: 0 0 50% 50%;
+  border:100rpx solid red;
+} */
 .userinfo-avatar {
   width: 100rpx;
   height: 100rpx;
@@ -62,4 +79,53 @@
     font-size: 44rpx;
     line-height: 33rpx;
     margin-bottom:19rpx;
+}
+.navBox{
+  width:100;
+  padding:0 35rpx;
+  margin-top: -35rpx;
+  position:relative;
+  z-index: 100;
+}
+.navUl{
+  background: #FFFFFF;
+  box-shadow: 0px 2rpx 20rpx 0rpx rgba(0, 0, 0, 0.08);
+  border-radius: 20rpx;
+}
+.navLi{
+  width:100%;
+  height:100rpx;
+  display: flex;
+  align-items: center;
+  padding:0 29rpx;
+  position:relative;
+  border-bottom:2rpx solid #f6f6f6;
+}
+.navLi:nth-last-child(1){
+  border-bottom:0;
+}
+.navLi image{
+  width:34rpx;
+  height:34rpx;
+  margin-right: 18rpx;
+}
+.navLi text{
+  font-size: 28rpx;
+  color:#000000;
+}
+.navLi .rightArrow{
+  position:absolute;
+  right:29rpx;
+  top:36rpx;
+  font-size: 36rpx;
+  color:#999999;
+}
+.moreProblem{
+  line-height:85rpx;
+  font-size: 26rpx;
+  color:#000000;
+  text-align: center
+}
+.moreProblem text{
+  margin-right:34rpx; 
 }

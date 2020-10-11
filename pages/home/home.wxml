@@ -1,4 +1,7 @@
 <cu-custom  color="#000000"><view slot="content">首页</view></cu-custom>
-<view>
- <bottomBar active="home"/>
+<view class="homeBody">
+<view class="searchBox">
+  <c-search bind:change="toSearch"  />
 </view>
+</view>
+<bottomBar active="home"/>

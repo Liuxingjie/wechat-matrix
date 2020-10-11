@@ -3,7 +3,7 @@
 
 <view class="myBox">
   <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <button class="getUserBtn" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <view class="userDetail"  wx:else>
       <view class="userHeader">
         <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
@@ -30,6 +30,35 @@
         </view>
       </view>
     </view>
+    <!-- <view class="redius" /> -->
+  </view>
+  <view class="navBox">
+    <view class="navUl">
+      <view class="navLi">
+        <image mode="widthFix" src="/images/problem.png"></image>
+        <text>常见问题</text>
+        <text class="rightArrow"> > </text>
+      </view>
+      <view class="navLi">
+        <image mode="widthFix" src="/images/problem.png"></image>
+        <text>联系客服</text>
+        <text class="rightArrow"> > </text>
+      </view>
+      <view class="navLi">
+        <image mode="widthFix" src="/images/problem.png"></image>
+        <text>关于我们</text>
+        <text class="rightArrow"> > </text>
+      </view>
+      <view class="navLi">
+        <image mode="widthFix" src="/images/problem.png"></image>
+        <text>赞赏</text>
+        <text class="rightArrow"> > </text>
+      </view>
+    </view>
+  </view>
+  <view class="moreProblem">
+    <text>产品建议</text>
+    <text>免责声明</text>
   </view>
 </view>
 

@@ -44,10 +44,19 @@ Page({
   },
   getUserInfo: function(e) {
     console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+    //成功
+    if (e.detail.errMsg =="getUserInfo:ok"){
+      app.globalData.userInfo = e.detail.userInfo
+      this.setData({
+        userInfo: e.detail.userInfo,
+        hasUserInfo: true
+      })
+    }else{
+      wx.showToast({
+        title: '获取异常',
+        icon: 'none',
+        duration: 2000
+      })
+    }
   }
 })

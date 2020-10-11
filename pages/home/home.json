@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-   
+    "c-search":"/components/c-search/index"
   }
 }

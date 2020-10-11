@@ -8,6 +8,12 @@ Page({
    
   },
 
+
+  //搜索事件
+  toSearch(event){
+    let data = event.detail
+    console.log(data)
+  },
   /**
    * 生命周期函数--监听页面加载
    */

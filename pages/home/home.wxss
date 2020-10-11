@@ -1,1 +1,7 @@
-/* pages/home/home.wxss */
+page{
+  background: #ffffff;
+}
+.searchBox{
+  padding:0 35rpx;
+  margin-top: 16rpx;
+}

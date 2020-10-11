@@ -8,6 +8,8 @@
   position:fixed;
   bottom:0;
   z-index: 1000;
+  background: #FFFFFF;
+  box-shadow: 0rpx -5rpx 11rpx 0rpx rgba(59, 59, 59, 0.1);
 }
 .barItem{
   height:100%;
@@ -15,12 +17,21 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position:relative;
 }
 .barItem image{
   width:44rpx;
   height:44rpx;
-  background-color: red;
   margin-bottom:10rpx;
+}
+.barItemCenter image{
+  width:90rpx;
+  height:90rpx;
+  position:absolute;
+  top:-23rpx;
+}
+.barItemCenter text{
+  margin-top: 54rpx;
 }
 .nativeItem{
   color:#348AFF;
