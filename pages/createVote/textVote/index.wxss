@@ -1,0 +1,32 @@
+page{
+  background:#ffffff;
+}
+.com-contain{
+  padding:0 44rpx;
+}
+.bigTextArea{
+  height:124rpx;
+  font-size: 44rpx;
+  padding-top: 40rpx;
+  border-bottom:1px solid  #F6F6F6;
+  color:#348AFF;
+  width:100%;
+}
+.middleTA{
+  height:124rpx;
+  font-size: 32rpx;
+  padding-top: 50rpx;
+  border-bottom:1px solid  #F6F6F6;
+  width:100%;
+}
+.icon{
+  width:34rpx;
+  height:34rpx;
+  margin-right: 25rpx;
+}
+.visible{
+  opacity: 0;
+}
+.noAfter::after{
+  content:''!important;
+}

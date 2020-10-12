@@ -2358,7 +2358,7 @@ button.icon.lg {
 
 .cu-form-group {
 	background-color: var(--white);
-	padding: 1rpx 30rpx;
+	padding: 1rpx 0;
 	display: flex;
 	align-items: center;
 	min-height: 100rpx;
@@ -2423,7 +2423,9 @@ button.icon.lg {
 	width: 100%;
 	text-align: right;
 }
-
+.cu-form-group picker.center .picker {
+	text-align: center;
+}
 .cu-form-group picker::after {
 	font-family: "cuIcon";
 	display: block;

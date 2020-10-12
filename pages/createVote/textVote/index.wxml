@@ -1,0 +1,41 @@
+<cu-custom isBack="true"  color="#000000"><view slot="content">文字投票</view></cu-custom>
+<view class="com-contain">
+  <textarea placeholder-style="color:#DADEE4" class="bigTextArea" placeholder="活动标题" auto-focus bindinput="changeInputValue"  data-key="title"></textarea>
+  <textarea placeholder-style="color:#DADEE4" class="middleTA" placeholder="投票介绍" bindinput="changeInputValue" data-key="desc" />
+
+<view class="cu-form-group" wx:for="{{submitForm.optionList}}">
+  <image class="icon-jian icon" src="/images/icon-jian.png" bindtap="deleteList" data-index="{{index}}"></image>
+  <input placeholder="请填写选项内容(不超过N个字)"></input>
+</view>
+<view class="cu-form-group" bindtap="addList">
+  <image class="icon-add icon" src="/images/icon-add.png"></image>
+  <text>添加选项</text>
+  <input placeholder="" class="visible"></input>
+</view>
+</view>
+<view class="com-contain">
+  <view class="cu-form-group">
+		<view class="title">投票开始日期</view>
+		<picker placeholder="请选择" mode="date" data-key="startDate" value="{{submitForm.startDate}}" start="2015-09-01" end="2020-09-01" bindchange="DateChange">
+			<view class="picker">
+				{{submitForm.startDate}}
+			</view>
+		</picker>
+	</view>
+  <view class="cu-form-group">
+		<view class="title">投票结束日期</view>
+		<picker placeholder="请选择" mode="date" data-key="endDate" value="{{submitForm.endDate}}" start="2015-09-01" end="2020-09-01" bindchange="DateChange">
+			<view class="picker">
+				{{submitForm.endDate}}
+			</view>
+		</picker>
+	</view>
+  	<view class="cu-form-group margin-top">
+		<view class="title">投票次数</view>
+		<picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
+			<view class="picker">
+				{{index?picker[index]:'禁止换行，超出容器部分会以 ... 方式截断'}}
+			</view>
+		</picker>
+	</view>
+</view>

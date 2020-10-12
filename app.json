@@ -4,7 +4,9 @@
     "pages/logs/logs",
     "pages/test/test",
     "pages/home/home",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/createVote/createVote",
+    "pages/createVote/textVote/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

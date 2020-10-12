@@ -83,6 +83,21 @@
 					"id": -1,
 					"name": "pages/home/home",
 					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/createVote/createVote",
+					"pathName": "pages/createVote/createVote",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "pages/createVote/textVote/index",
+					"pathName": "pages/createVote/textVote/index",
+					"query": "",
 					"scene": null
 				}
 			]
