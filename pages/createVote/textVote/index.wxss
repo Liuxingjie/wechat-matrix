@@ -1,8 +1,12 @@
 page{
-  background:#ffffff;
+  background: #F6F6F6;
 }
 .com-contain{
-  padding:0 44rpx;
+  background:#ffffff;
+  padding:0 45rpx;
+}
+.btns{
+  padding:50rpx 45rpx;
 }
 .bigTextArea{
   height:124rpx;

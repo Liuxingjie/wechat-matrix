@@ -9,7 +9,17 @@ Page({
       optionList:[{},{}],
       startDate:'2018-02-13',
       endDate:'2018-02-13',
+      isRepeatVote:false,
     },
+    picker:[]
+  },
+  //改变switch 公共方法
+  changeSwitch(e){
+    let key  = e.target.dataset.key,
+    value = e.detail.value;
+    this.setData({
+      [`submitForm.${key}`]:value
+    })
   },
   //改变input 公共方法
   changeInputValue(e){
@@ -39,11 +49,35 @@ Page({
       [`submitForm.${key}`]: e.detail.value
     })
   },
+
+  //下拉选择项
+  PickerChange(e){
+    let key = e.target.dataset.key,
+    arrayName = e.target.dataset.array,
+    index = e.detail.value;
+    this.setData({
+      [`submitForm.${key}`]:this.data[arrayName][index].value
+    })
+  },
+
+  //初始化投票次数的数据源
+  initPicker(){
+    let arr = [];  
+    for(let i=1;i<=50;i++){
+      arr.push({
+        label:i+'次',
+        value:i
+      })
+    }
+    this.setData({
+      picker:arr
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.initPicker()
   },
 
   /**

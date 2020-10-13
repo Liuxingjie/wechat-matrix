@@ -1,0 +1,5 @@
+
+
+<view class="['c-button',{{className}}]" bindtap="toClick">
+  {{name}}
+</view>
