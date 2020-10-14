@@ -1,6 +1,7 @@
-//index.js
+
 //获取应用实例
 const app = getApp()
+import {pageTo} from '../../utils/util'
 
 Page({
   data: {
@@ -58,5 +59,12 @@ Page({
         duration: 2000
       })
     }
+  },
+  pageTo(e){
+    pageTo(e.currentTarget.dataset.url,{
+      a:1,
+      b:2,
+      c:3
+    })
   }
 })

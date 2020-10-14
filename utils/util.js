@@ -535,6 +535,58 @@ const changeBottomAndTop= (params)=>{
     })
   })
 }
+
+const pageTo = (url,params)=>{
+  if (url) {
+    let mergeUrl = url + '?' + toQueryString(params)
+    if (getStringFirstChat(mergeUrl) !== "/") {
+      mergeUrl = "/" + mergeUrl;
+    }
+    wx.navigateTo({
+      url: mergeUrl,
+      fail: err => {
+        wx.reLaunch({
+          url: mergeUrl
+        });
+      }
+    })
+  } else {
+    wx.reLaunch({
+      url: '/pages/home/home'
+    });
+  }
+}
+
+function getStringFirstChat(string = "") {
+  return string.substr(0, 1)
+}
+
+// params  ==>>  queryString
+function toQueryPair(key, value) {
+  if (typeof value == 'undefined'){
+      return key;
+  }
+  return key + '=' + encodeURIComponent(value === null ? '' : String(value));
+}
+
+const toQueryString = (obj) => {
+  var ret = [];
+  for (var key in obj) {
+    key = encodeURIComponent(key);
+    var values = obj[key];
+    if (values && values.constructor == Array) {//数组
+      var queryValues = [];
+      for (var i = 0, len = values.length, value; i < len; i++) {
+        value = values[i];
+        queryValues.push(toQueryPair(key, value));
+      }
+      ret = ret.concat(queryValues);
+    } else { //字符串
+      ret.push(toQueryPair(key, values));
+    }
+  }
+  return ret.join('&');
+}
  
 module.exports = {
   formatTime: formatTime,
@@ -548,5 +600,6 @@ module.exports = {
   is_login,
   formatDateTime,
   changeBottomAndTop,
-  getParamsUrl
+  getParamsUrl,
+  pageTo
 }

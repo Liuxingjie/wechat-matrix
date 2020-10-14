@@ -67,7 +67,7 @@ page {
 	--grayShadow: rgba(114, 130, 138, 0.2);
 	--blackShadow: rgba(26, 26, 26, 0.2);
 
-	background-color: var(--ghostWhite);
+	background-color: var(--white);
 	font-size: 28rpx;
 	color: var(--black);
 	font-family: Helvetica Neue, Helvetica, sans-serif;
@@ -3930,6 +3930,12 @@ scroll-view.cu-steps .cu-item {
 .line-gray,
 .lines-gray {
 	color: var(--gray);
+}
+
+.text-darkGray,
+.line-darkGray,
+.lines-darkGray {
+	color: var(--darkGray);
 }
 
 .text-black,

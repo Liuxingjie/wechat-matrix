@@ -1,12 +1,15 @@
 {
   "pages": [
+    "pages/home/home",
     "pages/index/index",
     "pages/logs/logs",
     "pages/test/test",
-    "pages/home/home",
     "pages/my/my",
     "pages/createVote/createVote",
-    "pages/createVote/textVote/index"
+    "pages/createVote/textVote/index",
+    "pages/vote/index/index",
+    "pages/help/aboutUs/aboutUs",
+    "pages/help/list/list"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,42 @@
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">关于我们</view></cu-custom>
+<view class='bg-white padding-lg radius shadow-lg'>
+  
+  <view class="flex padding justify-center">
+    <view class="cu-avatar radius margin-left lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big81005.jpg);"></view>
+  </view>
+
+  <view class='text-content text-darkGray'>
+    <view>Hi！开发者~欢迎使用小程序！</view>
+    <view class='margin-top-sm'>该项目吧啦吧啦。</view>
+    <view class='margin-top-sm'>项目是吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦</view>
+    <view class='margin-top-sm'>该项目吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦</view>
+    <view class='margin-top-sm'>更多功能敬请期待！</view>
+  </view>
+</view>
+
+<view class="padding-top margin-bottom">
+  <view class="cu-bar bg-white solid-bottom">
+    <view class='action'>
+      官方微信
+    </view>
+    <view class="solid-bottom text-df text-gray padding-lg fr">weixin</view>
+  </view>
+  <view class="cu-bar bg-white solid-bottom">
+    <view class='action'>
+       官网微博
+    </view>
+    <view class="solid-bottom text-df text-gray padding-lg fr">weibo.com</view>
+  </view>
+  <view class="cu-bar bg-white solid-bottom">
+    <view class='action'>
+      公司邮箱
+    </view>
+    <view class="solid-bottom text-df text-gray padding-lg fr">esfsdfxsdfdsfdsfd@sdfdsf.com</view>
+  </view>
+  <view class="cu-bar bg-white solid-bottom">
+    <view class='action'>
+      客服电话
+    </view>
+    <view class="solid-bottom text-df text-gray padding-lg fr">400 400 4000</view>
+  </view>
+</view>

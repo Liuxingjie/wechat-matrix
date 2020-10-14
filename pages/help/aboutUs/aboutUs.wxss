@@ -1,0 +1,5 @@
+/* pages/help/aboutUs/aboutUs.wxss */
+.cu-bar .action:first-child {
+	margin-left: 40rpx;
+	font-size: 28rpx;
+}

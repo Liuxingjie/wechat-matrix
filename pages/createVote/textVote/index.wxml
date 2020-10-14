@@ -48,5 +48,5 @@
 	</view>
 </view>
 <view class="btns">
-	<c-button name="创建活动" className="primary" bindtap="toTest" />
+	<c-button name="创建活动" class="primary" bindtap="toTest" />
 </view>
