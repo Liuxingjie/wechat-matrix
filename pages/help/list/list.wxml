@@ -1,2 +1,14 @@
-<!--pages/help/list/list.wxml-->
-<text>pages/help/list/list.wxml</text>
+<cu-custom color="#000" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">常见问题</view></cu-custom>
+
+<view class="helpView">
+  <view class="helpList" wx:for="{{question}}">
+    <view class="helpItem {{item.isShow?'show':'false'}}" bindtap="onOffQuestion" data-idx="{{index}}">
+      <view class="help_question text-black text-bold">
+        <image src="../../../images/icon/ico_dialogue.png"></image>
+        <view class="help_title">{{item.title}}</view>
+        <text class="cuIcon-{{item.isShow?'fold':'unfold'}} lg text-gray rightArrow"></text>
+      </view>
+      <view class="help_answer text-darkGray">{{item.content}}</view>
+    </view>
+  </view>
+</view>

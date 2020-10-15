@@ -124,7 +124,8 @@
   line-height:85rpx;
   font-size: 26rpx;
   color:#000000;
-  text-align: center
+  margin-top:30rpx;
+  text-align: center;
 }
 .moreProblem text{
   margin-right:34rpx; 

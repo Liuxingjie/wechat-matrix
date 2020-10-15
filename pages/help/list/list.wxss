@@ -1,1 +1,42 @@
-/* pages/help/list/list.wxss */
+
+.helpItem{
+  padding:0 30rpx;
+  border-bottom:2rpx solid #F6F6F6;
+}
+.help_question{
+  position: relative;
+  padding:30rpx 0;
+  /* background: url(../../../images/icon/ico_dialogue.png) no-repeat left center;
+  background-size: 30rpx auto; */
+  font-size:28rpx;
+}
+.help_question image{
+  position: absolute;
+  top:50%;
+  left:0;
+  transform:translateY(-50%);
+  width:30rpx;
+  height:27rpx;
+}
+.help_title{
+  display:inline-block;
+  width:580rpx;
+  margin-left:58rpx;
+  line-height:40rpx;
+}
+.help_answer{
+  display:none;
+  padding-left:58rpx;
+  padding-bottom:30rpx;
+  font-size:24rpx;
+  line-height:36rpx;
+}
+.rightArrow{
+  position: absolute;
+  top:50%;
+  right:0;
+  transform:translateY(-50%);
+}
+.helpItem.show .help_answer{
+  display:block;
+}

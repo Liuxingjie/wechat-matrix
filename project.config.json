@@ -35,17 +35,10 @@
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
-      "list": []
-    },
     "plugin": {
       "list": []
     },
     "game": {
-      "currentL": -1,
       "list": []
     },
     "gamePlugin": {
@@ -93,6 +86,11 @@
           "name": "关于我们 aboutUs",
           "pathName": "pages/help/aboutUs/aboutUs",
           "query": "",
+          "scene": null
+        },
+        {
+          "name": "常见问题",
+          "pathName": "pages/help/list/list",
           "scene": null
         }
       ]
