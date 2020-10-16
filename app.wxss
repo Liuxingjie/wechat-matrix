@@ -1,4 +1,6 @@
-/**app.wxss**/
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
+
 .container {
   height: 100%;
   display: flex;
@@ -9,5 +11,21 @@
   box-sizing: border-box;
 } 
 
-@import "colorui/main.wxss";
-@import "colorui/icon.wxss";
+button::after{
+  border:none;
+}
+button{
+  padding:0 !important;
+  display:inline-block;
+  background-color:transparent;
+  box-sizing:initial;
+  border:none;
+}
+.fix:after {
+  content: " ";
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  line-height: 0;
+}

@@ -9,7 +9,8 @@
     "pages/createVote/textVote/index",
     "pages/vote/index/index",
     "pages/help/aboutUs/aboutUs",
-    "pages/help/list/list"
+    "pages/help/list/list",
+    "pages/login/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -18,7 +19,6 @@
     "navigationBarTextStyle": "black",
     "navigationStyle": "custom"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
     "cu-custom": "/colorui/components/cu-custom",

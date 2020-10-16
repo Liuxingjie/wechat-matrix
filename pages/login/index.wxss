@@ -1,0 +1,26 @@
+
+.loginTop{
+  height: 766rpx;
+  background: linear-gradient(68deg, #0CC8FF 0%, #188CFF 100%);
+}
+.loginMiddle{
+  position: relative;
+}
+.loginMiddle image.bg{
+  position: absolute;
+  width:100%;
+  left:0;
+  top:-450rpx;
+  z-index:1;
+}
+button.buleBtn{
+  position: relative;
+  width: 660rpx;
+  height: 100rpx !important;
+  margin:0 auto;
+  background: linear-gradient(-74deg, #0544FB, #3B14E4);
+  box-shadow: 1rpx 6rpx 20rpx 0px rgba(1, 41, 190, 0.4);
+  border-radius: 50rpx;
+  line-height: 100rpx;
+  z-index:5;
+}

@@ -7,7 +7,7 @@ const ComRequest = require('../utils/util.js');
  */
 export const toLogin = (params) => {
   return ComRequest.fetch(
-    `/users/userLogin`,
+    `users/userLogin`,
     params,
     {
       method: 'get'

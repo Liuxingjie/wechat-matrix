@@ -50,6 +50,6 @@ App({
   },
   globalData: {
     userInfo: null,
-    url:'https://www.xiangmx.top'
+    url:'https://xiangmx.top/'
   }
 })
