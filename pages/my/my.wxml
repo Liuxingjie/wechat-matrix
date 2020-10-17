@@ -20,10 +20,10 @@
           <view class="number">3</view>
           <view class="title">发起的投票</view>
         </view>
-        <view class="pItem">
+        <!-- <view class="pItem">
           <view class="number">12</view>
           <view class="title">报名的投票</view>
-        </view>
+        </view> -->
         <view class="pItem">
           <view class="number">0</view>
           <view class="title">参与的投票</view>
@@ -34,7 +34,7 @@
   </view>
   <view class="navBox">
     <view class="navUl">
-      <view class="navLi" bindtap="pageTo" data-url="">
+      <view class="navLi" bindtap="pageTo" data-url="/pages/help/list/list">
         <image mode="widthFix" src="/images/icon/ico_problem.png"></image>
         <text>常见问题</text>
         <text class="cuIcon-right lg text-gray rightArrow"></text>
@@ -58,8 +58,30 @@
   </view>
   <view class="moreProblem">
     <!-- <text>产品建议</text> -->
-    <text>免责声明</text>
+    <text bindtap="showModal" data-target="DialogModal1">免责声明</text>
   </view>
 </view>
 
+<view class="cu-modal {{modalName=='DialogModal1'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">免责声明</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-gray"></text>
+      </view>
+    </view>
+    <view class="padding text-mzsm">
+      <view class="text-left">我们仅提供发起及参与投票的平台,不对第三方发起人行为承担责任,所有投票奖品均由发起者提供并发放。</view>
+      <view class="text-left">本平台会在法律范围内尽可能地规范、督促用户遵守相关法律和平台使用规则,营造个良好的公平的投票平台给用户。</view>
+    </view>
+    <view class="cu-bar bg-white">
+      <view class="action margin-0 flex-sub  solid-left" bindtap="hideModal">我知道了</view>
+    </view>
+    <!-- <view class="cu-bar bg-white justify-end">
+      <view class="action">
+        <button class="cu-btn text-white round bg-gradientBlue margin-cnenter" bindtap="hideModal">我知道了</button>
+      </view>
+    </view> -->
+  </view>
+</view>
 <bottomBar active="my"/>

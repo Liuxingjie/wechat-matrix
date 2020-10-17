@@ -74,6 +74,7 @@
   color:#ffffff;
   font-size: 24rpx;
   line-height: 23rpx;
+  margin:0 10%;
 }
 .pItem .number{
     font-size: 44rpx;
@@ -129,4 +130,13 @@
 }
 .moreProblem text{
   margin-right:34rpx; 
+}
+
+.text-mzsm view{
+  text-indent:2em;
+  line-height:42rpx;
+  margin-top:20rpx;
+}
+.text-mzsm view:first-child{
+  margin-top:0;
 }

@@ -1,4 +1,6 @@
-
+.helpList{
+  width:100%;
+}
 .helpItem{
   padding:0 30rpx;
   border-bottom:2rpx solid #F6F6F6;
