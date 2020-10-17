@@ -1,7 +1,29 @@
-<cu-custom  color="#000000"><view slot="content">首页</view></cu-custom>
-<view class="homeBody">
-<view class="searchBox">
-  <c-search bind:change="toSearch"  />
-</view>
+<view class="com-page">
+  <cu-custom bgColor="#ffffff"  color="#000000"><view slot="content">首页</view></cu-custom>
+  <view class="searchBox">
+    <c-search bind:change="toSearch"  />
+  </view>
+  <view class="homeBody">
+    <swiper class="swiper" indicator-dots="true"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item class="swiper-item">
+          <image src="//www.xiangmx.top/images/home_swiper.png"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="com-title">
+      <text class="primary-title">热门活动</text>
+      <text class="second-title">Hot events</text>
+    </view>
+    <view class="listBox">
+      <view wx:for="{{4}}"  class="list_item">
+        <image mode="widthFix" src="//www.xiangmx.top/images/home_list.png"></image>
+        <view class="title">活动名称324334324</view>
+        <view class="personNumber">参与人数 98783</view>
+      </view>
+    </view>
+  </view>
+  <view class="cu-tabbar-height"></view>
 </view>
 <bottomBar active="home"/>

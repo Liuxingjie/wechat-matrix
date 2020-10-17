@@ -1,23 +1,28 @@
-// pages/home/home.js
+// pages/createVote/selectOne/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
-    indicatorDots: true,
-    vertical: false,
-    autoplay: false,
-    interval: 2000,
-    duration: 500
+    submitForm:{
+      optionList:[{},{}],
+    },
+    endedTime: '2019-01-01 12:38',
   },
-
-
-  //搜索事件
-  toSearch(event){
-    let data = event.detail
-    console.log(data)
+ //改变input 公共方法
+ changeInputValue(e){
+    let key = e.target.dataset.key;
+    let value = e.detail.value;
+    this.setData({
+      [`submitForm.${key}`]:value
+    })
+  },
+  onPickerChange3: function (e) {
+    console.log(e.detail);
+    this.setData({
+      endedTime: e.detail.dateString
+    })
   },
   /**
    * 生命周期函数--监听页面加载

@@ -10,7 +10,9 @@
     "pages/vote/index/index",
     "pages/help/aboutUs/aboutUs",
     "pages/help/list/list",
-    "pages/login/index"
+    "pages/login/index",
+    "pages/voteManage/index",
+    "pages/createVote/selectOne/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

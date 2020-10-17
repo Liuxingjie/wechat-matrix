@@ -5,8 +5,9 @@ page{
   background:#ffffff;
   padding:0 45rpx;
 }
-.btns{
-  padding:50rpx 45rpx;
+.selectBody{
+  padding:0 45rpx;
+  background:#ffffff;
 }
 .bigTextArea{
   height:124rpx;
@@ -23,20 +24,7 @@ page{
   border-bottom:1px solid  #F6F6F6;
   width:100%;
 }
-.icon{
-  width:34rpx;
-  height:34rpx;
-  margin-right: 25rpx;
-}
-.visible{
-  opacity: 0;
-}
-.noAfter::after{
-  content:''!important;
-}
-
-.rightPicker{
-  width:300rpx;
-  text-align: right;
-  overflow: hidden;
+.btns{
+  padding:0 45rpx;
+  margin-top: 50rpx;
 }

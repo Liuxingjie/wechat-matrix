@@ -13,11 +13,11 @@ Component({
   properties: {
     bgColor: {
       type: String,
-      default: ''
+      value: '#ffffff'
     }, 
     color:{
       type: String,
-      default: 'white'
+      default: ''
     },
     isCustom: {
       type: [Boolean, String],

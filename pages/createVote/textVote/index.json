@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-    "c-button":"/components/c-button/index"
+    "c-button":"/components/c-button/index",
+    "c-picker-date": "/components/c-picker-date/index"
   }
 }

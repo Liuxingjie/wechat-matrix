@@ -11,7 +11,14 @@ Page({
       endDate:'2018-02-13',
       isRepeatVote:false,
     },
-    picker:[]
+    picker:[],
+      endedTime: '2019-01-01 12:38',
+  },
+  onPickerChange3: function (e) {
+    console.log(e.detail);
+    this.setData({
+      endedTime: e.detail.dateString
+    })
   },
   //改变switch 公共方法
   changeSwitch(e){

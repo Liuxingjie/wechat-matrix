@@ -1,24 +1,22 @@
-// pages/home/home.js
+// pages/voteManage/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
-    indicatorDots: true,
-    vertical: false,
-    autoplay: false,
-    interval: 2000,
-    duration: 500
+    fnList:[
+      {imgUrl:'//www.xiangmx.top/images/voteManage/edit.png',title:'编辑',key:'edit'},
+      {imgUrl:'//www.xiangmx.top/images/voteManage/copy.png',title:'复制',key:'copy'},
+      {imgUrl:'//www.xiangmx.top/images/voteManage/delete.png',title:'删除',key:'delete'}
+    ],
+    navList:[
+      {imgUrl:'//www.xiangmx.top/images/voteManage/personmanage.png',title:'选手管理',key:'personmanage'},
+      {imgUrl:'//www.xiangmx.top/images/voteManage/rank.png',title:'票数排行',key:'rank'},
+      {imgUrl:'//www.xiangmx.top/images/voteManage/view.png',title:'总浏览量',key:'view'}
+    ]
   },
 
-
-  //搜索事件
-  toSearch(event){
-    let data = event.detail
-    console.log(data)
-  },
   /**
    * 生命周期函数--监听页面加载
    */

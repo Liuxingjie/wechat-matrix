@@ -24,11 +24,9 @@
 	</view>
   <view class="cu-form-group">
 		<view class="title">投票结束日期</view>
-		<picker placeholder="请选择" mode="date" data-key="endDate"  value="{{submitForm.endDate}}" start="2015-09-01" end="2020-09-01" bindchange="DateChange">
-			<view class="picker">
-				{{submitForm.endDate}}
-			</view>
-		</picker>
+		<view class="rightPicker">
+			<c-picker-date bind:onPickerChange="onPickerChange3" date="{{endedTime}}" />
+		</view>
 	</view>
 	<view class="cu-form-group margin-top">
 			<view class="title">投票次数</view>
@@ -48,5 +46,5 @@
 	</view>
 </view>
 <view class="btns">
-	<c-button name="创建活动" class="primary" bindtap="toTest" />
+	<c-button name="创建活动" className="primary" bindtap="toTest" />
 </view>

@@ -1,0 +1,6 @@
+/* pages/component/pickerYMDHM/pickerYMDHM.wxss */
+.showFont{
+  font-size: 28rpx;
+  width:260rpx;
+  line-height:100rpx!important;
+}
