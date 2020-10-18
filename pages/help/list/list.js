@@ -28,6 +28,7 @@ Page({
   onReachBottom: function () {},
   //用户点击右上角分享
   onShareAppMessage: function () {},
+  onNothing:function() {},  
   //显示隐藏问题答案
   onOffQuestion(e){
     var idx = e.currentTarget.dataset.idx

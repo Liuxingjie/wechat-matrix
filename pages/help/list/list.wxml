@@ -5,10 +5,10 @@
     <view class="helpItem {{item.isShow?'show':'false'}}" bindtap="onOffQuestion" data-idx="{{index}}">
       <view class="help_question text-black text-bold">
         <image src="../../../images/icon/ico_dialogue.png"></image>
-        <view class="help_title">{{item.title}}</view>
+        <view class="help_title">Q{{index+1}}.{{item.title}}</view>
         <text class="cuIcon-{{item.isShow?'fold':'unfold'}} lg text-gray rightArrow"></text>
       </view>
-      <view class="help_answer text-darkGray">{{item.content}}</view>
+      <view class="help_answer text-darkGray" catchtap="onNothing"><text user-select="true" space="true">{{item.content}}</text></view>
     </view>
   </view>
 </view>
