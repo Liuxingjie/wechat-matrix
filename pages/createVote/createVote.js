@@ -7,7 +7,18 @@ Page({
   data: {
     type: 1,
   },
-
+  toCreateVote(e){
+    let type = e.currentTarget.dataset.type;
+    let url = '';
+    if (type==1){//文字投票
+      url = "/pages/createVote/textVote/index"
+    }else{
+      url = "/pages/createVote/selectOne/index"
+    }
+    wx.navigateTo({
+      url: url,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

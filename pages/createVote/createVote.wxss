@@ -1,1 +1,11 @@
 /* pages/createVote/createVote.wxss */
+
+
+.com-contain{
+  width:100%;
+  height:auto;
+}
+.com-contain view{
+  color:red;
+  padding:30rpx;
+}

@@ -2,6 +2,11 @@
 <cu-custom isBack="{{true}}"  color="#000000"><view slot="content">发起投票</view></cu-custom>
 
 
-<view class="com-contain">
-  
+<view class="com-contain"> 
+    <view bindtap="toCreateVote" data-type="1">
+      文字投票
+    </view>
+    <view bindtap="toCreateVote" data-type="2">
+      二选一投票
+    </view>
 </view>

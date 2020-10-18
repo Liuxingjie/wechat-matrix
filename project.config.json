@@ -132,6 +132,13 @@
 					"id": -1,
 					"name": "我的投票",
 					"pathName": "pages/my/myVote/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "发起投票",
+					"pathName": "pages/createVote/createVote",
 					"scene": null
 				}
 			]
