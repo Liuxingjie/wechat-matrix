@@ -2,7 +2,7 @@
 //获取应用实例
 const app = getApp()
 import {pageTo} from '../../utils/util'
-
+import { toLogin }  from '../../api/user.js'
 Page({
   data: {
     userInfo: {},
@@ -52,12 +52,25 @@ Page({
   },
   getUserInfo: function(e) {
     console.log(e)
-    //成功
     if (e.detail.errMsg =="getUserInfo:ok"){
       app.globalData.userInfo = e.detail.userInfo
       this.setData({
         userInfo: e.detail.userInfo,
         hasUserInfo: true
+      })
+      //验证用户是否存在于数据库
+      wx.login({
+        success: codeObj => {
+         if(codeObj.code){
+          toLogin({
+            name:e.detail.userInfo.nickName,
+            sign:codeObj.code,
+            type:'tp'
+          }).then(res=>{
+           
+          })
+         }
+        }
       })
     }else{
       wx.showToast({
