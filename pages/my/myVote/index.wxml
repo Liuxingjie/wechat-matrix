@@ -1,0 +1,31 @@
+
+<cu-custom isBack="true"  color="#000000"><view slot="content">评选活动</view></cu-custom> 
+
+<view class="com-contain" style="height:calc(100% - {{CustomBar +50}}rpx);">
+  <scroll-view scroll-x class="bg-white nav">
+  <view class="flex text-center">
+    <view class="cu-item flex-sub {{index==TabCur?'text-blue cur':''}}" wx:for="{{tabList}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+      {{item}}
+    </view>
+  </view>
+</scroll-view>
+  <view class="com-body" style="height:calc(100% - {{CustomBar + 60}}rpx);">
+    <scroll-view scroll-y style="height:100%;">
+      <view wx:for="{{3}}" class="card-item">
+        <image src="//www.xiangmx.top/images/home_swiper.png"></image>
+        <view class="textBox">
+          <view class="flex-bet">
+            <text class="title">活动名称</text>
+            <text>已结束</text>
+          </view>
+          <view>
+              <text>参与人数 98783 总票数2312323</text>
+          </view>
+          <view>
+              <text>2020.09.09 12:12 结束</text>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

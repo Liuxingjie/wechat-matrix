@@ -120,6 +120,19 @@
 					"pathName": "pages/createVote/selectOne/index",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/voteDetail/index",
+					"pathName": "pages/voteDetail/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的投票",
+					"pathName": "pages/my/myVote/index",
+					"scene": null
 				}
 			]
 		}

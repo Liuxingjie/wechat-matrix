@@ -12,7 +12,9 @@
     "pages/help/list/list",
     "pages/login/index",
     "pages/voteManage/index",
-    "pages/createVote/selectOne/index"
+    "pages/createVote/selectOne/index",
+    "pages/voteDetail/index",
+    "pages/my/myVote/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

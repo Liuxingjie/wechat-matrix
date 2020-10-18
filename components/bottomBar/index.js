@@ -31,9 +31,15 @@ Component({
   methods: {
     toDetail(tapData){
       let data = tapData.currentTarget.dataset.item;
-      wx.redirectTo({
-        url: data.url
-      })
+      if (data.isCenter){
+        wx.navigateTo({
+          url: data.url
+        })
+      }else{
+        wx.redirectTo({
+          url: data.url
+        })
+      }
     }
   }
 })

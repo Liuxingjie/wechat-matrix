@@ -1,0 +1,48 @@
+page{
+  background: #F6F6F6;
+}
+.nav{
+  padding:0 72rpx;
+}
+.com-contain{
+  width:100%;
+  height:100%;
+  position:absolute;
+}
+.com-body{
+  padding:35rpx;
+  width:100%;
+  overflow: hidden;
+}
+.scrollY{
+  height:1000rpx;
+}
+.card-item{
+  background:#ffffff;
+  border-radius: 20px;
+  box-shadow: 1px 4px 20px 1px rgba(0, 0, 0, 0.08);
+  margin-bottom:40rpx;
+}
+.card-item image{
+  width:100%;
+  height:340rpx;
+}
+.textBox{
+  padding:30rpx;
+  color: #757575;
+  font-size: 26rpx;
+  line-height:40rpx;
+}
+.textBox .title{
+  color: #393939;
+  font-size: 29rpx;
+  font-weight: bold;
+}
+.textBox .flex-bet{
+  display: flex;
+  justify-content: space-between;
+  height:27rpx;
+  line-height:27rpx;
+  align-items: center;
+  margin-bottom:17rpx;
+}

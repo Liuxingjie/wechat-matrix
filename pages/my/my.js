@@ -15,6 +15,13 @@ Page({
       url: '../logs/logs'
     })
   },
+  //去我的投票
+  toMyVoteList(e){
+    let type = e.currentTarget.dataset.type
+    wx.navigateTo({
+      url: `/pages/my/myVote/index?type=${type}`,
+    }) 
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
