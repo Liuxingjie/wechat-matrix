@@ -65,3 +65,33 @@
   color: #393939;
   margin-left: 18rpx;
 }
+
+.selList{
+  margin:50rpx 0;
+}
+.selItem{
+  display:inline-block;
+  width:320rpx;
+  height:160rpx;
+  color: #FFF;
+
+}
+.selItem.wz{
+  margin-right:40rpx;
+  background:url(https://xiangmx.top/images/bg_item2.png) no-repeat center center;
+  background-size:100% auto;
+}
+.selItem.exy{
+  background:url(https://xiangmx.top/images/bg_item3.png) no-repeat center center;
+  background-size:100% auto;
+}
+.selTitle{
+  padding:32rpx 0 8rpx 143rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+.selDesc{
+  padding-left:143rpx;
+  font-size: 24rpx;
+  opacity: 0.8;
+}

@@ -7,6 +7,12 @@ Page({
   data: {
     type: 1,
   },
+  onSelectVote(e){
+    let type = e.currentTarget.dataset.type;
+    this.setData({
+      selectIdx:type
+    })
+  },
   toCreateVote(e){
     let type = e.currentTarget.dataset.type;
     let url = '';

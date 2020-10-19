@@ -116,8 +116,8 @@
 				},
 				{
 					"id": 7,
-					"name": "pages/createVote/selectOne/index",
-					"pathName": "pages/createVote/selectOne/index",
+					"name": "发起投票 createVote",
+					"pathName": "pages/createVote/createVote",
 					"query": "",
 					"scene": null
 				},
@@ -139,6 +139,7 @@
 					"id": -1,
 					"name": "发起投票",
 					"pathName": "pages/createVote/createVote",
+					"query": "",
 					"scene": null
 				}
 			]

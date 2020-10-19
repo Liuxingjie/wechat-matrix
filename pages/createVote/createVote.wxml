@@ -1,12 +1,19 @@
 
 <cu-custom isBack="{{true}}"  color="#000000"><view slot="content">发起投票</view></cu-custom>
 
+<radio-group   class="com-contain" bindchange="SetBorderSize">
 
-<view class="com-contain"> 
-    <view bindtap="toCreateVote" data-type="1">
-      文字投票
-    </view>
-    <view bindtap="toCreateVote" data-type="2">
-      二选一投票
-    </view>
-</view>
+  <label class="selItem wz" bindtap="onSelectVote" data-type="1">
+      <view class="selTitle">文字投票</view>
+      <view class="selDesc">评选活动评选评选活动评选评选活动评选评选</view>
+      <radio class="white sm radio" value="" checked></radio>
+  </label>
+  <label class="selItem exy" bindtap="onSelectVote" data-type="2">
+      <view class="selTitle">二选一</view>
+      <radio class="white sm radio" value="s"></radio>
+      <view class="selDesc">评选活动评选</view>
+  </label>
+
+</radio-group>
+
+<view class="cu-btn text-lg lg text-white bg-gradientBlue nextBtn"  bindtap="toCreateVote" data-type="{{selectIdx}}">下一步</view>
