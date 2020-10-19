@@ -12,7 +12,10 @@ Page({
       isRepeatVote:false,
     },
     picker:[],
-      endedTime: '2019-01-01 12:38',
+    endedTime: '2019-01-01 12:38',
+  },
+  toCreate(){
+
   },
   onPickerChange3: function (e) {
     console.log(e.detail);

@@ -1,7 +1,7 @@
 <cu-custom isBack="true"  color="#000000"><view slot="content">文字投票</view></cu-custom>
 <view class="com-contain">
   <textarea placeholder-style="color:#DADEE4" class="bigTextArea" placeholder="活动标题" auto-focus bindinput="changeInputValue"  data-key="title"></textarea>
-  <textarea placeholder-style="color:#DADEE4" class="middleTA" placeholder="投票介绍" bindinput="changeInputValue" data-key="desc" />
+  <textarea placeholder-style="color:#DADEE4" class="middleTA" placeholder="投票介绍" bindinput="changeInputValue" data-key="introduce" />
 
 <view class="cu-form-group" wx:for="{{submitForm.optionList}}">
   <image class="icon-jian icon" src="/images/icon-jian.png" bindtap="deleteList" data-index="{{index}}"></image>
@@ -46,5 +46,5 @@
 	</view>
 </view>
 <view class="btns">
-	<c-button name="创建活动" className="primary" bindtap="toTest" />
+	<c-button name="创建活动" className="primary" bindtap="toCreate" />
 </view>

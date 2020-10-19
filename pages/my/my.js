@@ -51,9 +51,9 @@ Page({
     }
   },
   getUserInfo: function(e) {
-    console.log(e)
     if (e.detail.errMsg =="getUserInfo:ok"){
       app.globalData.userInfo = e.detail.userInfo
+   
       this.setData({
         userInfo: e.detail.userInfo,
         hasUserInfo: true
@@ -67,7 +67,11 @@ Page({
             sign:codeObj.code,
             type:'tp'
           }).then(res=>{
-           
+            if(res){
+              app.globalData.wechat_id = res.wechat_id
+              wx.setStorageSync('userInfo', app.globalData.userInfo)
+              wx.setStorageSync('wechat_id', res.wechat_id)
+            }
           })
          }
         }
