@@ -1,0 +1,47 @@
+
+<cu-custom isBack="{{true}}"  color="#000000"><view slot="content">发起投票</view></cu-custom>
+
+<view class="rl_main">
+  <view class="rl_top">
+    <image src="https://xiangmx.top/images/rank/bg_rank.png" mode="widthFix"></image>
+  </view>
+
+  <view class="cu-list menu-avatar rl_con">
+    <view class="cu-item rl_head">
+      <view class="rankNum text-darkGray">排名</view>
+      <view class="content">
+        <view class="text-darkGray">内容</view>
+      </view>
+      <view class="action">
+        <view class="ttext-darkGray">票数</view>
+      </view>
+    </view>
+    <view class="cu-item">
+      <image class="rankNum" src="https://xiangmx.top/images/rank/ico_rank1.png" mode="widthFix"></image>
+      <view class="content">
+        <view class="text-def">似懂非懂舒服的沙发电视</view>
+      </view>
+      <view class="action">
+        <view class="ttext-def">2000</view>
+      </view>
+    </view>
+    <view class="cu-item">
+      <image class="rankNum" src="https://xiangmx.top/images/rank/ico_rank2.png" mode="widthFix"></image>
+      <view class="content">
+        <view class="ttext-def">似懂非懂舒服的沙发电视</view>
+      </view>
+      <view class="action">
+        <view class="ttext-def">2000</view>
+      </view>
+    </view>
+    <view class="cu-item ">
+      <image class="rankNum" src="https://xiangmx.top/images/rank/ico_rank3.png" mode="widthFix"></image>
+      <view class="content">
+        <view class="ttext-def">似懂非懂舒服的沙发电视</view>
+      </view>
+      <view class="action">
+        <view class="ttext-def">2000</view>
+      </view>
+    </view>
+  </view>
+</view>

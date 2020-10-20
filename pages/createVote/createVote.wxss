@@ -15,11 +15,11 @@
 }
 .selItem.wz{
   margin-right:40rpx;
-  background:url(https://xiangmx.top/images/bg_item2_2.png) no-repeat center center;
+  background:url(https://xiangmx.top/images/create/bg_item2_2.png) no-repeat center center;
   background-size:100% auto;
 }
 .selItem.exy{
-  background:url(https://xiangmx.top/images/bg_item3_2.png) no-repeat center center;
+  background:url(https://xiangmx.top/images/create/bg_item3_2.png) no-repeat center center;
   background-size:100% auto;
 }
 .selTitle{

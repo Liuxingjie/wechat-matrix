@@ -64,6 +64,7 @@
 			"list": []
 		},
 		"miniprogram": {
+			"current": -1,
 			"list": [
 				{
 					"id": -1,
@@ -108,13 +109,6 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/voteManage/index",
-					"pathName": "pages/voteManage/index",
-					"query": "",
-					"scene": null
-				},
-				{
 					"id": 7,
 					"name": "发起投票 createVote",
 					"pathName": "pages/createVote/createVote",
@@ -139,6 +133,20 @@
 					"id": -1,
 					"name": "发起投票",
 					"pathName": "pages/createVote/createVote",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "排行榜 rankList",
+					"pathName": "pages/createVote/rankList/rankList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "投票管理 voteManage",
+					"pathName": "pages/voteManage/index",
 					"query": "",
 					"scene": null
 				}
