@@ -1,4 +1,4 @@
-let app = getApp();
+const app = getApp();
 const qs = require('./qs.js')
 const formatTime = date => {
   const year = date.getFullYear()
@@ -164,9 +164,10 @@ const header = {
   "Content-Type": "application/x-www-form-urlencoded"
 };
 const setParams = (url, param = {}, opt = {}) => {
+  let userData = app ? app.globalData.url:getApp().globalData;
   let curParams = {
     header: {
-      "Content-Type": "application/x-www-form-urlencoded",
+      "Content-Type": "application/json",
       "Accept":"application/json",
     }
   };
@@ -203,13 +204,14 @@ const setParams = (url, param = {}, opt = {}) => {
   // 请求参数
   return {
     method: "post",
-    url: `${app.globalData.url}${url}`,
+    url: `${app ? app.globalData.url:getApp().globalData.url}${url}`,
     ...curParams
   };
 };
 const fetch = (url, param = {}, opt = {})=>{
   return new Promise((resolve,reject)=>{
     const opts = setParams(url, param, opt);
+    debugger;
     if (!opt.noLoading){
       wx.showLoading({
         title: '数据加载中',
@@ -242,6 +244,7 @@ const fetch = (url, param = {}, opt = {})=>{
         }
       },
       fail: err => {
+        
         wx.hideLoading()
         wx.showToast({
           title: '网络错误',
@@ -587,7 +590,27 @@ const toQueryString = (obj) => {
   }
   return ret.join('&');
 }
- 
+
+//判断参数是否完整
+ const requireParam = (param,arr=[])=>{
+  let errorMsg = [],success = []
+  arr.map((key)=>{
+      if( param[key] === undefined || param[key]=== null ||  param[key]=== ""){
+          errorMsg.push(key)
+      }
+      success.push(param[key])
+  })
+  if(errorMsg.length){
+    wx.showToast({
+      title: `参数缺失:${errorMsg.join(',')}`,
+      icon: 'none',
+      duration: 2000
+    })
+    return false
+  }else{
+    return true;
+  }
+}
 module.exports = {
   formatTime: formatTime,
   getToken,
@@ -601,5 +624,6 @@ module.exports = {
   formatDateTime,
   changeBottomAndTop,
   getParamsUrl,
-  pageTo
+  pageTo,
+  requireParam
 }

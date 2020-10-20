@@ -1,4 +1,8 @@
 // pages/createVote/createVote.js
+
+import { createVote } from '../../../api/vote.js'
+const ComRequest = require('../../../utils/util');
+const app = getApp()
 Page({
 
   /**
@@ -7,20 +11,37 @@ Page({
   data: {
     submitForm:{
       optionList:[{},{}],
-      startDate:'2018-02-13',
-      endDate:'2018-02-13',
-      isRepeatVote:false,
+      isRepeatVote:2,
+      isHideNum:2,
+      selectList:[],
+      title:'',
+      introduce:'',
+      startTime:'2021-05-20 05:20',
+      endTime:'2021-05-20 05:20'
     },
     picker:[],
-    endedTime: '2019-01-01 12:38',
   },
   toCreate(){
-
+    let params = {
+      ...this.data.submitForm,
+      createBy:app.globalData.wechat_id
+    }
+    let pramsKeys = ['title','introduce','startTime','endTime','isHideNum','isRepeatVote','voteNum','selectList']
+    let reqRes = ComRequest.requireParam(params,pramsKeys)
+    if(reqRes){
+      createVote(params).then(res=>{
+        wx.navigateTo({
+          url: `/pages/my/myVote/index?type=${type}`,
+        }) 
+      })
+    }
+    // 
   },
   onPickerChange3: function (e) {
     console.log(e.detail);
+    let key = e.currentTarget.dataset.key;
     this.setData({
-      endedTime: e.detail.dateString
+      [`submitForm.${key}`]: e.detail.dateString
     })
   },
   //改变switch 公共方法
@@ -28,7 +49,7 @@ Page({
     let key  = e.target.dataset.key,
     value = e.detail.value;
     this.setData({
-      [`submitForm.${key}`]:value
+      [`submitForm.${key}`]:value ? 1:2
     })
   },
   //改变input 公共方法
@@ -37,6 +58,14 @@ Page({
     let value = e.detail.value;
     this.setData({
       [`submitForm.${key}`]:value
+    })
+  },
+  //改变数据参数
+  changeSelectValue(e){
+    let index = e.target.dataset.index;
+    let value = e.detail.value;
+    this.setData({
+      [`submitForm.selectList[${index}]`]:value
     })
   },
   deleteList(e){

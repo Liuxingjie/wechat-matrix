@@ -5,9 +5,9 @@ const ComRequest = require('../utils/util.js');
  * 用户登录
  * @param {*} params data数据对象
  */
-export const toLogin = (params) => {
+export const createVote = (params) => {
   return ComRequest.fetch(
-    `/users/userLogin`,
+    `/vote/createVote`,
     params,
     {}
   );

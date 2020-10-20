@@ -5,9 +5,9 @@
 
 <view class="cu-form-group" wx:for="{{submitForm.optionList}}">
   <image class="icon-jian icon" src="/images/icon-jian.png" bindtap="deleteList" data-index="{{index}}"></image>
-  <input placeholder="请填写选项内容(不超过N个字)"></input>
+  <input  bindinput="changeSelectValue"  data-key="selectList" data-index="{{index}}"  placeholder="请填写选项内容(不超过N个字)"></input>
 </view>
-<view class="cu-form-group" bindtap="addList">
+<view class="cu-form-group " bindtap="addList">
   <image class="icon-add icon" src="/images/icon-add.png"></image>
   <text>添加选项</text>
   <input placeholder="" class="visible"></input>
@@ -16,33 +16,31 @@
 <view class="com-contain">
   <view class="cu-form-group">
 		<view class="title">投票开始日期</view>
-		<picker placeholder="请选择" mode="date" data-key="startDate" value="{{submitForm.startDate}}" start="2015-09-01" end="2020-09-01" bindchange="DateChange">
-			<view class="picker">
-				{{submitForm.startDate}}
-			</view>
-		</picker>
+		<view class="rightPicker">
+			<c-picker-date bind:onPickerChange="onPickerChange3" data-key="startTime" date="{{submitForm.startTime}}" />
+		</view>
 	</view>
   <view class="cu-form-group">
 		<view class="title">投票结束日期</view>
 		<view class="rightPicker">
-			<c-picker-date bind:onPickerChange="onPickerChange3" date="{{endedTime}}" />
+			<c-picker-date bind:onPickerChange="onPickerChange3" data-key="endTime" date="{{submitForm.endTime}}" />
 		</view>
 	</view>
 	<view class="cu-form-group margin-top">
 			<view class="title">投票次数</view>
-			<picker bindchange="PickerChange" value="{{index}}" data-key="voteNumber" data-array="picker" range-key='label' range="{{picker}}">
+			<picker bindchange="PickerChange" value="{{index}}" data-key="voteNum" data-array="picker" range-key='label' range="{{picker}}">
 				<view class="picker">
-					{{submitForm.voteNumber?submitForm.voteNumber+'次':'请选择'}}
+					{{submitForm.voteNum?submitForm.voteNum+'次':'请选择'}}
 				</view>
 			</picker>
 	</view>
 	<view class="cu-form-group margin-top">
 		<view class="title">是否允许每日投票</view>
-		<switch checked="{{submitForm.isRepeatVote}}" bindchange="changeSwitch" data-key="isRepeatVote"/>
+		<switch checked="{{submitForm.isRepeatVote==1}}" bindchange="changeSwitch" data-key="isRepeatVote"/>
 	</view>
 	<view class="cu-form-group margin-top">
 		<view class="title">是否隐藏票数</view>
-		<switch checked="{{submitForm.isHideNum}}" bindchange="changeSwitch" data-key="isHideNum"/>
+		<switch checked="{{submitForm.isHideNum==1}}" bindchange="changeSwitch" data-key="isHideNum"/>
 	</view>
 </view>
 <view class="btns">
