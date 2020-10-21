@@ -1,0 +1,14 @@
+.suc_main{
+  padding-top:140rpx;
+}
+.suc_img image{
+  display:inline-block;
+  width:206rpx;
+  height:202rpx;
+}
+.suc_tit{
+  font-size: 36prx;
+}
+.suc_con{
+  font-size: 24rpx;
+}

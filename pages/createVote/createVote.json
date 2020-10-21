@@ -1,4 +1,5 @@
 {
   "usingComponents": {
+    "c-login":"/components/c-login/index"
   }
 }

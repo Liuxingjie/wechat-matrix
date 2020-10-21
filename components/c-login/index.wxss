@@ -1,0 +1,24 @@
+@import "/colorui/main.wxss";
+@import "/app.wxss";
+
+.cu-dialog {
+  width:640rpx;
+  padding-bottom:50rpx;
+}
+.cu-dialog .justify-end{
+  border:2rpx solid #F6F6F6;
+}
+.btn-s{
+  width:240rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  line-height: 80rpx;
+}
+.commitBtn{
+  margin-right:50rpx;
+}
+.cancelBtn{
+  border: 2rpx solid var(--blue);
+  background-color: var(--white) !important;
+  margin-left:50rpx;
+}
