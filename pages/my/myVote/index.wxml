@@ -9,7 +9,7 @@
     </view>
   </view>
 </scroll-view>
-  <view class="com-body" style="height:calc(100% - {{CustomBar + 60}}rpx);">
+  <view class="com-body" style="margin:{{CustomBar + 20 }}rpx 0">
     <scroll-view scroll-y style="height:100%;">
       <view wx:for="{{3}}" class="card-item">
         <image src="//www.xiangmx.top/images/home_swiper.png"></image>

@@ -211,7 +211,6 @@ const setParams = (url, param = {}, opt = {}) => {
 const fetch = (url, param = {}, opt = {})=>{
   return new Promise((resolve,reject)=>{
     const opts = setParams(url, param, opt);
-    debugger;
     if (!opt.noLoading){
       wx.showLoading({
         title: '数据加载中',

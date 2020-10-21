@@ -3,6 +3,8 @@ page{
 }
 .nav{
   padding:0 72rpx;
+  position: fixed;
+  z-index: 10000;
 }
 .com-contain{
   width:100%;

@@ -47,12 +47,6 @@
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
-      "list": []
-    },
     "plugin": {
       "list": []
     },
@@ -128,16 +122,16 @@
           "scene": null
         },
         {
-          "id": -1,
           "name": "我的投票",
           "pathName": "pages/my/myVote/index",
-          "query": "",
+          "query": "type=2",
           "scene": null
         },
         {
           "id": -1,
           "name": "发起投票",
           "pathName": "pages/createVote/createVote",
+          "query": "",
           "scene": null
         }
       ]
