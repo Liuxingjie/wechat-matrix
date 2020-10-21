@@ -1,0 +1,45 @@
+/* pages/createVote/rankList/rankList.wxss */
+.rl_top image{
+  width:100%;
+}
+.rankNum{
+  position: absolute;
+  left: 62rpx;
+  width:80rpx;
+  font-size:28rpx;
+}
+.rl_con{
+  position:relative;
+  top:-40rpx;
+  padding-top:40rpx;
+  background: #FFF;
+  border-radius: 40rpx;
+
+}
+.cu-list.menu-avatar>.cu-item{
+  padding-right:40rpx;
+}
+.cu-list.menu-avatar>.cu-item {
+	height: 120rpx;
+}
+.cu-list.menu-avatar>.cu-item .content {
+	left: 170rpx;
+  width: calc(100% - 96rpx - 60rpx - 120rpx - 60rpx);
+  font-size:28rpx;
+}
+.cu-list.menu-avatar>.cu-item .action {
+	font-size:30rpx;
+}
+cu-list.menu-avatar>.cu-item .content>view:first-child {
+  font-size:28rpx;
+  color:#666;
+}
+.cu-list.menu-avatar>.cu-item .content>view:first-child {
+	font-size:28rpx;
+  color:#666;
+}
+.cu-list.menu-avatar>.cu-item.rl_head .action {
+	font-size:28rpx;
+  color:#666;
+}
+  

@@ -501,7 +501,7 @@ radio.black[checked] .wx-radio-input {
 switch.white[checked] .wx-switch-input,
 checkbox.white[checked] .wx-checkbox-input,
 radio.white[checked] .wx-radio-input {
-	background-color: var(--white) !important;
+	background-color: transparent !important;
 	color: var(--black) !important;
 }
 

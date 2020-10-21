@@ -1,30 +1,13 @@
-// pages/createVote/createVote.js
+// pages/createVote/rankList/rankList.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    type: 1,
+    
   },
-  onSelectVote(e){
-    let type = e.currentTarget.dataset.type;
-    this.setData({
-      selectIdx:type
-    })
-  },
-  toCreateVote(e){
-    let type = e.currentTarget.dataset.type;
-    let url = '';
-    if (type==1){//文字投票
-      url = "/pages/createVote/textVote/index"
-    }else{
-      url = "/pages/createVote/selectOne/index"
-    }
-    wx.navigateTo({
-      url: url,
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

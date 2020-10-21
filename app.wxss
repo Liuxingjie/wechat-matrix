@@ -46,3 +46,9 @@ button{
   height: 0;
   line-height: 0;
 }
+
+.text-def,
+.line-def,
+.lines-def {
+	color:#343434;
+}
