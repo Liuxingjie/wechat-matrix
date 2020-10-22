@@ -1,4 +1,7 @@
 // pages/createVote/selectOne/index.js
+import { createVote } from '../../../api/vote.js'
+const ComRequest = require('../../../utils/util');
+const app = getApp()
 Page({
 
   /**
@@ -7,8 +10,40 @@ Page({
   data: {
     submitForm:{
       optionList:[{},{}],
+      isRepeatVote:2,
+      isHideNum:2,
+      selectList:[],
+      title:'',
+      introduce:'',
+      startTime:'2021-05-20 05:20',
+      endTime:'2021-05-20 05:20'
     },
-    endedTime: '2019-01-01 12:38',
+  },
+  toCreate(){
+    let params = {
+      ...this.data.submitForm,
+      createBy:app.globalData.wechat_id,
+      type:3,
+      voteNum:1
+    }
+    let pramsKeys = ['title','introduce','startTime','endTime','selectList']
+    let reqRes = ComRequest.requireParam(params,pramsKeys)
+    if(reqRes){
+      createVote(params).then(res=>{
+        wx.navigateTo({
+          url: `/pages/my/myVote/index?type=${type}`,
+        }) 
+      })
+    }
+    // 
+  },
+   //改变数据参数
+   changeSelectValue(e){
+    let index = e.target.dataset.index;
+    let value = e.detail.value;
+    this.setData({
+      [`submitForm.selectList[${index}]`]:value
+    })
   },
  //改变input 公共方法
  changeInputValue(e){

@@ -16,7 +16,7 @@
       </view>
 
       <view class="previewBox">
-        <view class="pItem" bindtap="toMyVoteList" data-type="1">
+        <view class="pItem" bindtap="toMyVoteList" data-isme="1">
           <view class="number">3</view>
           <view class="title">发起的投票</view>
         </view>
@@ -24,7 +24,7 @@
           <view class="number">12</view>
           <view class="title">报名的投票</view>
         </view> -->
-        <view class="pItem" bindtap="toMyVoteList" data-type="1">
+        <view class="pItem" bindtap="toMyVoteList" data-isme="2">
           <view class="number">0</view>
           <view class="title">参与的投票</view>
         </view>

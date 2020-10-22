@@ -13,7 +13,8 @@ Page({
     TabCur: 0,
     pageIndex:1,
     finished:false,
-    listData:[]
+    listData:[],
+    isMyCreate:false, //是否自己创建
   },
   tabSelect(e) {
     this.setData({
@@ -40,7 +41,8 @@ Page({
       pageIndex:this.data.pageIndex,
       pageSize:10,
       type: this.data.TabCur == 0 ? 2 : 3,
-      userId: app.globalData.wechat_id
+      userId: app.globalData.wechat_id,
+      isMyCreate:this.data.isMyCreate
     }
     queryVoteList(params).then(res=>{
       let newArr = this.data.listData.concat(res)
@@ -73,10 +75,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      //type:  2:文字投票 3：二选一
-    let type = options.type;
+    let isMyCreate = options.isMyCreate;
     this.setData({
-      TabCur:type==3 ?1: 0
+      isMyCreate:isMyCreate
     })
     this.getData()
   },

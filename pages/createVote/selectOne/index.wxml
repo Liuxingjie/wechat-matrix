@@ -2,22 +2,22 @@
 <cu-custom isBack="true"  color="#000000"><view slot="content">二选一投票</view></cu-custom>
 <view class="com-contain">
 	<textarea placeholder-style="color:#DADEE4" class="bigTextArea" placeholder="活动标题" auto-focus bindinput="changeInputValue"  data-key="title"></textarea>
-	<textarea placeholder-style="color:#DADEE4" class="middleTA" placeholder="投票介绍" bindinput="changeInputValue" data-key="desc" />
+	<textarea placeholder-style="color:#DADEE4" class="middleTA" placeholder="投票介绍" bindinput="changeInputValue" data-key="introduce" />
 	<view class="cu-form-group" wx:for="{{submitForm.optionList}}">
-		<input placeholder="请填写选项内容(不超过N个字)" placeholder-style="color:#D9DEE4;"></input>
+		<input  bindinput="changeSelectValue"  data-key="selectList" data-index="{{index}}"  placeholder="请填写选项内容(不超过N个字)"></input>
 	</view>
-</view>
+</view> 
 <view class="selectBody">
 	<view class="cu-form-group margin-top">
 			<view class="title">投票开始日期</view>
 			<view class="rightPicker">
-				<c-picker-date bind:onPickerChange="onPickerChange3" date="{{endedTime}}" />
+				<c-picker-date bind:onPickerChange="onPickerChange3" data-key="startTime" date="{{submitForm.startTime}}" />
 			</view>
 		</view>
 		<view class="cu-form-group">
 			<view class="title">投票结束日期</view>
 			<view class="rightPicker">
-				<c-picker-date bind:onPickerChange="onPickerChange3" date="{{endedTime}}" />
+				<c-picker-date bind:onPickerChange="onPickerChange3" data-key="endTime" date="{{submitForm.endTime}}" />
 			</view>
 		</view>
 		<view class="cu-form-group">
@@ -26,5 +26,5 @@
 		</view>
 	</view>
 <view class="btns">
-	<c-button name="创建活动" className="primary" />
+	<c-button name="创建活动" className="primary" bindtap="toCreate" />
 </view>

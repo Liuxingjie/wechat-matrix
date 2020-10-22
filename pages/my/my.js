@@ -18,9 +18,9 @@ Page({
   },
   //去我的投票
   toMyVoteList(e){
-    let type = e.currentTarget.dataset.type
+    let isMyCreate = e.currentTarget.dataset.isme
     wx.navigateTo({
-      url: `/pages/my/myVote/index?type=${type}`,
+      url: `/pages/my/myVote/index?isMyCreate=${isMyCreate}`,
     }) 
   },
   onLoad: function (option) {

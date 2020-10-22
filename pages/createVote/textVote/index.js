@@ -24,7 +24,8 @@ Page({
   toCreate(){
     let params = {
       ...this.data.submitForm,
-      createBy:app.globalData.wechat_id
+      createBy:app.globalData.wechat_id,
+      type:2,
     }
     let pramsKeys = ['title','introduce','startTime','endTime','isHideNum','isRepeatVote','voteNum','selectList']
     let reqRes = ComRequest.requireParam(params,pramsKeys)
