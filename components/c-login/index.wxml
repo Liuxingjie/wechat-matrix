@@ -1,0 +1,26 @@
+
+<!-- <view class="bottomBar">
+  <view wx:for='{{list}}' style="width:{{100/list.length}}%" bindtap="toDetail" data-item="{{item}}"  class="['barItem',{{item.isCenter?'barItemCenter':''}},{{item.name==active?'nativeItem':''}}]">
+    <image src="{{item.name==active ? item.activeUrl: item.imgUrl}}" />
+    <text>{{item.title}}</text>
+  </view>
+</view> -->
+
+<view class="cu-modal {{modalName=='loginModal'?'show':''}}">
+  <view class="cu-dialog bg-white">
+    <view class="cu-bar justify-end">
+      <view class="content">登录</view>
+      <!-- <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-gray"></text>
+      </view> -->
+    </view>
+    <view class="padding-xl text-mzsm">
+      <view class="text-left text-sm text-black">XXXX 申请以下授权：</view>
+      <view class="text-left text-sm text-darkGray margin-top-sm">收到回复即可当护身即可获得健康放款</view>
+    </view>
+    <view class="cu-bar">
+      <view class="cu-btn text-blue btn-s cancelBtn" bindtap="hideModal">我再看看</view>
+      <button class="cu-btn text-white round bg-gradientBlue margin-cnenter btn-s commitBtn" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">马上登录</button>
+    </view>
+  </view>
+</view>

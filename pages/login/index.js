@@ -38,7 +38,7 @@ Page({
         wx.login({      
           success (res) {  
             console.log(res.code)
-            if (res.code) {      
+            if (res.code) {
             //这个code就是我要的      
               toLogin({        
                 sign:res.code, 

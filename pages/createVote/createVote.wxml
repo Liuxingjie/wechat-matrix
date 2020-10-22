@@ -1,7 +1,7 @@
 
 <cu-custom isBack="{{true}}"  color="#000000"><view slot="content">发起投票</view></cu-custom>
 
-<radio-group   class="com-contain" bindchange="SetBorderSize">
+<radio-group class="com-contain" bindchange="SetBorderSize">
 
   <label class="selItem wz" bindtap="onSelectVote" data-type="1">
       <view class="selTitle">文字投票</view>
@@ -17,3 +17,5 @@
 </radio-group>
 
 <view class="cu-btn text-lg lg text-white bg-gradientBlue nextBtn"  bindtap="toCreateVote" data-type="{{selectIdx}}">下一步</view>
+
+<c-login modalName="{{modalName}}"></c-login>
