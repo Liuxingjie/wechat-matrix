@@ -48,3 +48,8 @@ page{
   align-items: center;
   margin-bottom:17rpx;
 }
+.noMore{
+  line-height:56rpx;
+  text-align: center;
+  color:#888888;
+}

@@ -13,29 +13,43 @@ Page({
     TabCur: 0,
     pageIndex:1,
     finished:false,
+    listData:[]
   },
   tabSelect(e) {
     this.setData({
       TabCur: e.currentTarget.dataset.id,
       scrollLeft: (e.currentTarget.dataset.id - 1) * 60,
       pageIndex:1,
-      finished:false
+      finished:false,
+      listData:[],
     })
-    this.getData(1)
+    wx.pageScrollTo({
+      scrollTop: 0
+    })
+    this.getData(true)
   },
 
-  getData(pageIndex=1,pageSize=10){
+  getData(bool){
+    if(bool){
+      this.setData({
+        pageSize:1,
+        listData:[]
+      })
+    }
     let params = {
-      pageIndex:pageIndex,
-      pageSize:pageSize,
+      pageIndex:this.data.pageIndex,
+      pageSize:10,
       type: this.data.TabCur == 0 ? 2 : 3,
       userId: app.globalData.wechat_id
     }
     queryVoteList(params).then(res=>{
-        console.log(res)
-        if(res.length<pageSize){
+      let newArr = this.data.listData.concat(res)
+      this.setData({
+        listData:newArr
+      })
+        if(res.length<10){
           this.setData({
-            finished:true
+            finished:true,
           })
         }
     })
@@ -53,13 +67,18 @@ Page({
     this.setData({
       pageIndex:pageIndex
     })
-    this.getData(pageIndex)
+    this.getData()
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getData(1)
+      //type:  2:文字投票 3：二选一
+    let type = options.type;
+    this.setData({
+      TabCur:type==3 ?1: 0
+    })
+    this.getData()
   },
 
   /**

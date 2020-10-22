@@ -124,7 +124,7 @@
         {
           "name": "我的投票",
           "pathName": "pages/my/myVote/index",
-          "query": "type=2",
+          "query": "type=3",
           "scene": null
         },
         {
