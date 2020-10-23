@@ -7,6 +7,7 @@ Page({
   data: {
     type: 1,
     isLogin:false,
+    selectIdx:1,
   },
   onSelectVote(e){
     let type = e.currentTarget.dataset.type;
@@ -15,8 +16,8 @@ Page({
     })
   },
   toCreateVote(e){
-    let type = e.currentTarget.dataset.type;
     let url = '';
+    let type = this.data.selectIdx;
     if (type==1){//文字投票
       url = "/pages/createVote/textVote/index"
     }else{

@@ -1,140 +1,149 @@
 {
-  "description": "项目配置文件",
-  "packOptions": {
-    "ignore": []
-  },
-  "setting": {
-    "urlCheck": false,
-    "es6": true,
-    "enhance": false,
-    "postcss": true,
-    "preloadBackgroundData": false,
-    "minified": true,
-    "newFeature": true,
-    "coverView": true,
-    "nodeModules": false,
-    "autoAudits": false,
-    "showShadowRootInWxmlPanel": true,
-    "scopeDataCheck": false,
-    "uglifyFileName": false,
-    "checkInvalidKey": true,
-    "checkSiteMap": true,
-    "uploadWithSourceMap": true,
-    "compileHotReLoad": false,
-    "useMultiFrameRuntime": false,
-    "useApiHook": true,
-    "babelSetting": {
-      "ignore": [],
-      "disablePlugins": [],
-      "outputPath": ""
-    },
-    "bundle": false,
-    "useIsolateContext": true,
-    "useCompilerModule": true,
-    "userConfirmedUseCompilerModuleSwitch": false,
-    "packNpmManually": false,
-    "packNpmRelationList": [],
-    "minifyWXSS": true
-  },
-  "compileType": "miniprogram",
-  "libVersion": "2.13.0",
-  "appid": "wxbfa5b70170c1c717",
-  "projectname": "%E6%8A%95%E7%A5%A8%E5%90%A7",
-  "debugOptions": {
-    "hidedInDevtools": []
-  },
-  "isGameTourist": false,
-  "simulatorType": "wechat",
-  "simulatorPluginLibVersion": {},
-  "condition": {
-    "plugin": {
-      "list": []
-    },
-    "game": {
-      "list": []
-    },
-    "gamePlugin": {
-      "list": []
-    },
-    "miniprogram": {
-      "list": [
-        {
-          "id": -1,
-          "name": "pages/test/test",
-          "pathName": "pages/test/test",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": 1,
-          "name": "首页 home",
-          "pathName": "pages/home/home",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": 2,
-          "name": "个人中心 my",
-          "pathName": "pages/my/my",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": 3,
-          "name": "发起投票-选择投票类型",
-          "pathName": "pages/createVote/createVote",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": 4,
-          "name": "发起文字投票",
-          "pathName": "pages/createVote/textVote/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "关于我们 aboutUs",
-          "pathName": "pages/help/aboutUs/aboutUs",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/voteManage/index",
-          "pathName": "pages/voteManage/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": 7,
-          "name": "pages/createVote/selectOne/index",
-          "pathName": "pages/createVote/selectOne/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/voteDetail/index",
-          "pathName": "pages/voteDetail/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "我的投票",
-          "pathName": "pages/my/myVote/index",
-          "query": "type=3",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "发起投票",
-          "pathName": "pages/createVote/createVote",
-          "query": "",
-          "scene": null
-        }
-      ]
-    }
-  }
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": false,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": false,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"uglifyFileName": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
+		"useMultiFrameRuntime": false,
+		"useApiHook": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"bundle": false,
+		"useIsolateContext": true,
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"packNpmManually": false,
+		"packNpmRelationList": [],
+		"minifyWXSS": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.13.0",
+	"appid": "wxbfa5b70170c1c717",
+	"projectname": "%E6%8A%95%E7%A5%A8%E5%90%A7",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"list": []
+		},
+		"miniprogram": {
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/test/test",
+					"pathName": "pages/test/test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "首页 home",
+					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "个人中心 my",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "发起投票-选择投票类型",
+					"pathName": "pages/createVote/createVote",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "发起文字投票",
+					"pathName": "pages/createVote/textVote/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "关于我们 aboutUs",
+					"pathName": "pages/help/aboutUs/aboutUs",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/voteManage/index",
+					"pathName": "pages/voteManage/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "pages/createVote/selectOne/index",
+					"pathName": "pages/createVote/selectOne/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/voteDetail/index",
+					"pathName": "pages/voteDetail/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "发起投票",
+					"pathName": "pages/createVote/createVote",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "评选活动",
+					"pathName": "pages/my/myVote/index",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
 }

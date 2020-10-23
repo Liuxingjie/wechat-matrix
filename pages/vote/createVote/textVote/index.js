@@ -1,7 +1,7 @@
 // pages/createVote/createVote.js
 
-import { createVote } from '../../../api/vote.js'
-const ComRequest = require('../../../utils/util');
+import { createVote } from '../../../../api/vote.js'
+const ComRequest = require('../../../../utils/util');
 const app = getApp()
 Page({
 
@@ -32,7 +32,7 @@ Page({
     if(reqRes){
       createVote(params).then(res=>{
         wx.navigateTo({
-          url: `/pages/my/myVote/index?type=${type}`,
+          url: `/pages/my/myVote/index?isMyCreate=1&tabActive=0`,
         }) 
       })
     }

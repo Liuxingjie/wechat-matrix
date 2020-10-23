@@ -16,6 +16,13 @@ Page({
     listData:[],
     isMyCreate:false, //是否自己创建
   },
+// 跳转到详情或者管理界面
+  toDetail(e){
+    let item = e.currentTarget.dataset.item;
+    wx.navigateTo({
+      url: '/pages/voteManage/index',
+    })
+  },
   tabSelect(e) {
     this.setData({
       TabCur: e.currentTarget.dataset.id,
@@ -75,9 +82,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let isMyCreate = options.isMyCreate;
+    let isMyCreate = options.isMyCreate ||true;
+    let tabActive = options.active || 0;
     this.setData({
-      isMyCreate:isMyCreate
+      isMyCreate:isMyCreate,
+      TabCur:tabActive
     })
     this.getData()
   },

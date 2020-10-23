@@ -14,11 +14,11 @@
     </swiper>
 
     <view class="selList">
-      <navigator class="selItem wz" url="/pages/createVote/textVote/index">
+      <navigator class="selItem wz" url="/pages/vote/createVote/textVote/index">
         <view class="selTitle">文字投票</view>
         <view class="selDesc">评选活动评选</view>
       </navigator>
-      <navigator class="selItem exy" url="/pages/createVote/selectOne/index">
+      <navigator class="selItem exy" url="/pages/vote/createVote/selectOne/index">
         <view class="selTitle">二选一</view>
         <view class="selDesc">评选活动评选</view>
         </navigator>

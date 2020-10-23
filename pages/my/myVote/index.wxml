@@ -11,7 +11,7 @@
 </scroll-view>
   <view class="com-body" style="margin:{{CustomBar + 20 }}rpx 0">
     <scroll-view scroll-y style="height:100%;">
-      <view wx:for="{{listData}}" class="card-item">
+      <view wx:for="{{listData}}" class="card-item" bindtap="toDetail" data-item="{{item}}">
         <image src="//www.xiangmx.top/images/home_swiper.png"></image>
         <view class="textBox">
           <view class="flex-bet">
