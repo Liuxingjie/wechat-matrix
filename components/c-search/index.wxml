@@ -1,7 +1,7 @@
 
 <view class="searchBox">
     <form action="/">
-      <!-- <image class="seachImage" src="/images/search.png"></image> -->
+      <image class="seachImage" src="https://xiangmx.top/images/ico_search.png"></image>
       <input class="searchBox" confirm-type="search" bindinput='input' bindconfirm='search' placeholder="请输入关键词进行搜索" ></input>
     </form>
 </view>

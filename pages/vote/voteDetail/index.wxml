@@ -1,3 +1,48 @@
-<cu-custom isBack="true"  color="#000000"><view slot="content">详情</view></cu-custom>
-<view>
+<cu-custom isBack="true"  color="#000000"><view slot="content">投票详情</view></cu-custom>
+
+<view class="vd_main">
+  <view class="vd_info text-black bg-white">
+    <view class="vd_tit text-bold text-xl1 ">选个好名字选个好名字选个选个好好名字</view>
+    <view class="vd_con text-l margin-top">投票介绍投票介绍投票介绍投票介绍投票介绍投票介绍</view>
+    <view class="vd_time text-sm margin-top-sm">2020.09.09 24:00 - 2020.10.09 24:00</view>
+  </view>
+
+  <view class="vd_optionList marginp-top-xl">
+    <view class="vd_option margin-bottom-sm">
+      <view class="vd_opt_info position-relative">
+        <view class="vd_opt_ratio fr">0%</view>
+        <view class="vd_opt_num fr">0票</view>
+        <view class="vd_opt_name fl">李记湛江生蚝</view>
+        <view class="vd_opt_votes position-absolute bg-blue" style="width:0%"></view>
+      </view>
+    </view>
+    <view class="vd_option margin-bottom-sm">
+      <view class="vd_opt_info position-relative">
+        <view class="vd_opt_ratio fr">50%</view>
+        <view class="vd_opt_num fr">1票</view>
+        <view class="vd_opt_name fl">李记湛江生蚝</view>
+        <view class="vd_opt_votes position-absolute bg-blue" style="width:50%"></view>
+      </view>
+      <view class="vd_opt_user margin-top-sm">
+        <view class="cu-avatar sm round margin-right-sm" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+        <view class="cu-avatar sm round margin-right-sm" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+        <view class="cu-avatar sm round margin-right-sm" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+        <view class="cu-avatar sm round bg-white more-avater"><view class="bg-gray"></view><view class="bg-gray"></view><view class="bg-gray"></view></view>
+      </view>
+    </view>
+    <view class="vd_option margin-bottom-sm">
+      <view class="vd_opt_info position-relative cur">
+        <view class="vd_opt_ratio fr">50%</view>
+        <view class="vd_opt_num fr">1票</view>
+        <view class="vd_opt_name fl">李记湛江生蚝<view class="select"></view></view>
+        <view class="vd_opt_votes position-absolute bg-blue" style="width:50%"></view>
+      </view>
+      <view class="vd_opt_user margin-top-sm">
+        <view class="cu-avatar sm round margin-right-sm" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+        <view class="cu-avatar sm round margin-right-sm" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+        <view class="cu-avatar sm round margin-right-sm" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+        <view class="cu-avatar sm round bg-white more-avater"><view class="bg-gray"></view><view class="bg-gray"></view><view class="bg-gray"></view></view>
+      </view>
+    </view>
+  </view>
 </view>

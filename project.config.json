@@ -129,6 +129,13 @@
 					"pathName": "pages/my/myVote/index",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "投票详情",
+					"pathName": "pages/vote/voteDetail/index",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

@@ -37,6 +37,7 @@ page {
 	--oliveLight: #e8f4d9;
 	--greenLight: #d7f0db;
 	--cyanLight: #d2f1f0;
+	--blue: #3389FF;
 	--blueLight: #cce6ff;
 	--purpleLight: #e1d7f0;
 	--mauveLight: #ebd4ef;
@@ -3796,6 +3797,10 @@ scroll-view.cu-steps .cu-item {
 
 .text-xl {
 	font-size: 36rpx;
+}
+
+.text-xl1 {
+	font-size: 42rpx;
 }
 
 .text-xxl {

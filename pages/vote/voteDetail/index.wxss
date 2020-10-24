@@ -1,1 +1,46 @@
-/* pages/voteDetail/index.wxss */
+page{
+  background:#f2f2f2
+}
+.vd_info{
+  padding:37rpx 46rpx 52rpx;
+}
+.vd_tit{
+  line-height:56rpx;
+}
+.vd_option .cur{
+  background:#EAF3FF;
+}
+.vd_option .cur .select{
+  display:inline-block;
+  width:36rpx;
+  height:24rpx;
+  margin-left:12rpx;
+  background:url(https://xiangmx.top/images/icon/ico_select.png) no-repeat center center;
+  background-size:100% auto;
+}
+.vd_opt_info{
+  padding:0 40rpx;
+  height:100rpx;
+  line-height:100rpx;
+  box-shadow: 0px 2px 20px 0px rgba(45, 60, 76, 0.1);
+}
+.vd_opt_ratio{
+  width:86rpx;
+  text-align:right;
+}
+.vd_opt_votes{
+  left:0;
+  bottom:0;
+  height:4rpx;
+  width:0;
+}
+.vd_opt_user{
+  padding-left:38rpx;
+}
+.more-avater view{
+  display:inline-block;
+  width:6rpx;
+  height:6rpx;
+  border-radius:3rpx;
+  margin:0 2rpx;
+}

@@ -52,3 +52,14 @@ button{
 .lines-def {
 	color:#343434;
 }
+
+
+.position-relative{
+  position:relative;
+}
+.position-absolute{
+  position:absolute;
+}
+.position-fixed{
+  position:fixed;
+}

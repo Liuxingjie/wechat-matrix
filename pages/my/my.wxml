@@ -35,22 +35,22 @@
   <view class="navBox">
     <view class="navUl">
       <view class="navLi" bindtap="pageTo" data-url="/pages/help/list/list">
-        <image mode="widthFix" src="/images/icon/ico_problem.png"></image>
+        <image mode="widthFix" src="https://xiangmx.top/images/icon/ico_problem.png"></image>
         <text>常见问题</text>
         <text class="cuIcon-right lg text-gray rightArrow"></text>
       </view>
       <!-- <view class="navLi">
-        <image mode="widthFix" src="/images/icon/ico_service.png"></image>
+        <image mode="widthFix" src="https://xiangmx.top/images/icon/ico_service.png"></image>
         <text>联系客服</text>
         <text class="cuIcon-right lg text-gray rightArrow"></text>
       </view> -->
       <view class="navLi" bindtap="pageTo" data-url="/pages/help/aboutUs/aboutUs">
-        <image mode="widthFix" src="/images/icon/ico_about.png"></image>
+        <image mode="widthFix" src="https://xiangmx.top/images/icon/ico_about.png"></image>
         <text>关于我们</text>
         <text class="cuIcon-right lg text-gray rightArrow"></text>
       </view>
       <!-- <view class="navLi">
-        <image mode="widthFix" src="/images/icon/ico_problem.png"></image>
+        <image mode="widthFix" src="/https://xiangmx.top/images/icon/ico_problem.png"></image>
         <text>赞赏</text>
         <text class="cuIcon-right lg text-gray rightArrow"></text>
       </view> -->

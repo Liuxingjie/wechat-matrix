@@ -8,7 +8,7 @@
 .help_question{
   position: relative;
   padding:30rpx 0;
-  /* background: url(../../../images/icon/ico_dialogue.png) no-repeat left center;
+  /* background: url(https://xiangmx.top/images/icon/ico_dialogue.png) no-repeat left center;
   background-size: 30rpx auto; */
   font-size:28rpx;
 }
