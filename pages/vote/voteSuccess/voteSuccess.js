@@ -1,40 +1,18 @@
+// pages/vote/voteSuccess/voteSuccess.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    type: 1,
-    isLogin:false,
-    selectIdx:1,
+
   },
-  onSelectVote(e){
-    let type = e.currentTarget.dataset.type;
-    this.setData({
-      selectIdx:type
-    })
-  },
-  toCreateVote(e){
-    let url = '';
-    let type = this.data.selectIdx;
-    if (type==1){//文字投票
-      url = "/pages/vote/createVote/textVote/index"
-    }else{
-      url = "/pages/vote/createVote/selectOne/index"
-    }
-    wx.navigateTo({
-      url: url,
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    if(!this.data.isLogin){
-      this.setData({
-        modalName:"loginModal"
-      })
-    }
+
   },
 
   /**
@@ -84,10 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  hideModal: function () {
-    this.setData({
-      hideModal:"loginModal"
-    })
   }
 })

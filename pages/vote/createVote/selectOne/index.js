@@ -1,4 +1,3 @@
-// pages/createVote/selectOne/index.js
 import { createVote } from '../../../../api/vote.js'
 const ComRequest = require('../../../../utils/util');
 const app = getApp()

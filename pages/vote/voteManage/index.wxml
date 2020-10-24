@@ -1,4 +1,4 @@
-<!--pages/voteManage/index.wxml-->
+
 <cu-custom color="#000" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">投票管理</view></cu-custom>
 <view class="contain">
   <image class="header_img" src="//www.xiangmx.top/images/manage_top.png"></image>

@@ -1,4 +1,3 @@
-// pages/createVote/createVote.js
 
 import { createVote } from '../../../../api/vote.js'
 const ComRequest = require('../../../../utils/util');

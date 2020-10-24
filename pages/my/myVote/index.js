@@ -20,7 +20,7 @@ Page({
   toDetail(e){
     let item = e.currentTarget.dataset.item;
     wx.navigateTo({
-      url: '/pages/voteManage/index',
+      url: '/pages/vote/voteManage/index',
     })
   },
   tabSelect(e) {

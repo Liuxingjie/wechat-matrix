@@ -1,4 +1,4 @@
-<!--pages/createVote/selectOne/index.wxml-->
+
 <cu-custom isBack="true"  color="#000000"><view slot="content">二选一投票</view></cu-custom>
 <view class="com-contain">
 	<textarea placeholder-style="color:#DADEE4" class="bigTextArea" placeholder="活动标题" auto-focus bindinput="changeInputValue"  data-key="title"></textarea>

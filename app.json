@@ -10,12 +10,12 @@
     "pages/help/aboutUs/aboutUs",
     "pages/help/list/list",
     "pages/login/index",
-    "pages/voteManage/index",
+    "pages/vote/voteManage/index",
     "pages/vote/createVote/selectOne/index",
-    "pages/voteDetail/index",
+    "pages/vote/voteDetail/index",
     "pages/my/myVote/index",
     "pages/vote/createVote/rankList/rankList",
-    "pages/voteDetail/success/success"
+    "pages/vote/voteSuccess/voteSuccess"
   ],
   "window": {
     "backgroundTextStyle": "light",

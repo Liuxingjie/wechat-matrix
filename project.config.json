@@ -65,6 +65,7 @@
 			"list": []
 		},
 		"miniprogram": {
+			"current": -1,
 			"list": [
 				{
 					"id": -1,
@@ -89,15 +90,15 @@
 				},
 				{
 					"id": 3,
-					"name": "发起投票-选择投票类型",
-					"pathName": "pages/createVote/createVote",
+					"name": "选择创建投票类型",
+					"pathName": "pages/vote/createVote/createVote",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": 4,
 					"name": "发起文字投票",
-					"pathName": "pages/createVote/textVote/index",
+					"pathName": "pages/vote/createVote/textVote/index",
 					"query": "",
 					"scene": null
 				},
@@ -109,36 +110,22 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/voteManage/index",
-					"pathName": "pages/voteManage/index",
+					"id": 6,
+					"name": "投票管理",
+					"pathName": "pages/vote/voteManage/index",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": 7,
-					"name": "pages/createVote/selectOne/index",
-					"pathName": "pages/createVote/selectOne/index",
+					"name": "创建二选一投票",
+					"pathName": "pages/vote/createVote/selectOne/index",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/voteDetail/index",
-					"pathName": "pages/voteDetail/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "发起投票",
-					"pathName": "pages/createVote/createVote",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "评选活动",
+					"id": 8,
+					"name": "我的投票",
 					"pathName": "pages/my/myVote/index",
 					"query": "",
 					"scene": null

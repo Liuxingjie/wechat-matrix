@@ -1,4 +1,3 @@
-// pages/voteManage/index.js
 Page({
 
   /**
