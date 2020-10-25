@@ -131,10 +131,10 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 9,
 					"name": "投票详情",
 					"pathName": "pages/vote/voteDetail/index",
-					"query": "",
+					"query": "voteId=73",
 					"scene": null
 				}
 			]

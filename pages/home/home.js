@@ -1,4 +1,5 @@
 // pages/home/home.js
+import { getIsHomeList } from '../../api/vote.js'
 Page({
 
   /**
@@ -10,7 +11,8 @@ Page({
     vertical: false,
     autoplay: false,
     interval: 2000,
-    duration: 500
+    duration: 500,
+    listData:[]
   },
 
 
@@ -19,11 +21,22 @@ Page({
     let data = event.detail
     console.log(data)
   },
+  //跳转到详情页面
+  toDetail(e){
+    let voteId = e.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: `/pages/vote/voteDetail/index?voteId=${voteId}`
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    getIsHomeList({}).then(res=>{
+      this.setData({
+        listData: res
+      })
+    })
   },
 
   /**

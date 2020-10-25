@@ -29,10 +29,11 @@
       <text class="second-title">Hot events</text>
     </view>
     <view class="listBox">
-      <view wx:for="{{4}}"  class="list_item">
+      <view wx:for="{{listData}}" bindtap="toDetail"
+      data-id='{{item.id}}'  class="list_item">
         <image mode="widthFix" src="//www.xiangmx.top/images/home_list.png"></image>
-        <view class="title">活动名称324334324</view>
-        <view class="personNumber">参与人数 98783</view>
+        <view class="title">{{item.title}}</view>
+        <view class="personNumber">参与人数 {{item.partNumber}}</view>
       </view>
     </view>
   </view>

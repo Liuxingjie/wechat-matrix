@@ -22,3 +22,28 @@ export const queryVoteList =  (params) => {
     {}
   );
 }
+
+
+//查询首页热门活动
+export const getIsHomeList = (params) =>{
+  return ComRequest.fetch(
+    `/vote/getIsHomeList`,
+    {
+      ...params,
+      isShowOnHome:1
+    },
+    {
+    }
+  );
+}
+
+//获取投票详情
+export const getVoteDetail = (params) => {
+  return ComRequest.fetch(
+    `/vote/getDetail`,
+    params,
+    {
+      method:'get'
+    }
+  );
+}

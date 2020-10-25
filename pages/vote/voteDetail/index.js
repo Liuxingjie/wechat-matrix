@@ -1,18 +1,34 @@
 // pages/voteDetail/index.js
+import { getVoteDetail } from '../../../api/vote.js'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    voteId:null,
+    totalData:{}
   },
-
+  getDetail(id){
+    getVoteDetail({voteId:id}).then(res=>{
+      this.setData({
+        totalData:res
+      })
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let voteId =options.voteId
+    if(voteId){
+      this.setData({
+        voteId: voteId
+      })
+      if (voteId) {
+        this.getDetail(voteId)
+      }
+    }
   },
 
   /**

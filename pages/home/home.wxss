@@ -38,10 +38,11 @@
 }
 .list_item .title{
   font-size: 29rpx;
-  line-height:27rpx;
+  line-height:29rpx;
   color:#393939;
   font-weight: bold;
   margin-bottom:17rpx;
+  margin-top: 20rpx;
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis

@@ -12,25 +12,11 @@
       <view class="vd_opt_info position-relative">
         <view class="vd_opt_ratio fr">0%</view>
         <view class="vd_opt_num fr">0票</view>
-        <view class="vd_opt_name fl">李记湛江生蚝</view>
+        <view class="vd_opt_name fl">李记湛江生蚝<view class="select"></view></view>
         <view class="vd_opt_votes position-absolute bg-blue" style="width:0%"></view>
       </view>
     </view>
-    <view class="vd_option margin-bottom-sm">
-      <view class="vd_opt_info position-relative">
-        <view class="vd_opt_ratio fr">50%</view>
-        <view class="vd_opt_num fr">1票</view>
-        <view class="vd_opt_name fl">李记湛江生蚝</view>
-        <view class="vd_opt_votes position-absolute bg-blue" style="width:50%"></view>
-      </view>
-      <view class="vd_opt_user margin-top-sm">
-        <view class="cu-avatar sm round margin-right-sm" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
-        <view class="cu-avatar sm round margin-right-sm" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
-        <view class="cu-avatar sm round margin-right-sm" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
-        <view class="cu-avatar sm round bg-white more-avater"><view class="bg-gray"></view><view class="bg-gray"></view><view class="bg-gray"></view></view>
-      </view>
-    </view>
-    <view class="vd_option margin-bottom-sm">
+    <view class="vd_option margin-bottom-sm" wx:for="{{totalData.partList}}" wx:for-item="part">
       <view class="vd_opt_info position-relative cur">
         <view class="vd_opt_ratio fr">50%</view>
         <view class="vd_opt_num fr">1票</view>
@@ -38,11 +24,17 @@
         <view class="vd_opt_votes position-absolute bg-blue" style="width:50%"></view>
       </view>
       <view class="vd_opt_user margin-top-sm">
-        <view class="cu-avatar sm round margin-right-sm" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
-        <view class="cu-avatar sm round margin-right-sm" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
-        <view class="cu-avatar sm round margin-right-sm" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+        <view class="cu-avatar sm round margin-right-sm"
+         wx:for="{{part.userList}}" 
+         wx:for-item="user" 
+         style="background-image:url({{user.avatar}});">
+        </view>
         <view class="cu-avatar sm round bg-white more-avater"><view class="bg-gray"></view><view class="bg-gray"></view><view class="bg-gray"></view></view>
       </view>
     </view>
   </view>
 </view>
+
+<view class="btns">
+	<c-button name="投票" className="primary" bindtap="toCreate" />
+</view> 

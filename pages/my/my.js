@@ -61,7 +61,6 @@ Page({
       //验证用户是否存在于数据库
       wx.login({
         success: codeObj => {
-          debugger;
          if(codeObj.code){
            let params = {
               nickName:e.detail.userInfo.nickName,

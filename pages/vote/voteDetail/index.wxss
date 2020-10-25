@@ -44,3 +44,12 @@ page{
   border-radius:3rpx;
   margin:0 2rpx;
 }
+
+.btns{
+  position: absolute;
+  width:100%;
+  height:80rpx;
+  bottom:40rpx;
+  z-index: 100;
+  padding:0 45rpx;
+}
