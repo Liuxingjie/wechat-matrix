@@ -1,20 +1,19 @@
-<cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">关于我们</view></cu-custom>
+<cu-custom color="#000" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">关于我们</view></cu-custom>
 <view class='bg-white padding-lg radius shadow-lg'>
   
-  <view class="flex padding justify-center">
+  <view class="flex padding justify-center" wx:if="{{false}}">
     <view class="cu-avatar radius margin-left lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big81005.jpg);"></view>
   </view>
 
   <view class='text-content text-darkGray'>
-    <view>Hi！开发者~欢迎使用小程序！</view>
-    <view class='margin-top-sm'>该项目吧啦吧啦。</view>
-    <view class='margin-top-sm'>项目是吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦</view>
-    <view class='margin-top-sm'>该项目吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦吧啦</view>
-    <view class='margin-top-sm'>更多功能敬请期待！</view>
+    <view class="text-center">投票霸</view>
+    <view class='margin-top-sm'>投票霸是一款支持图片投票、文字投票、二选一投票等多种投票形式的智能小程序。</view>
+    <view class='margin-top-sm'>致力于为用户提供更便捷全面的投票服务。</view>
+    <view class='margin-top-sm'>在发起活动的同时也支持推广加粉，可以让发起者以较小的成本获取更多的粉丝，堪称加粉利器、最实用的综合性工具。</view>
   </view>
 </view>
 
-<view class="padding-top margin-bottom">
+<view class="padding-top margin-bottom" wx:if="{{false}}">
   <view class="cu-bar bg-white solid-bottom">
     <view class='action'>
       官方微信

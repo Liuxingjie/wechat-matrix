@@ -6,6 +6,6 @@
   </view>
   <view class="flex flex-direction loginMiddle">
     <image class="bg" src="https://xiangmx.top/images/login/bg.png" mode="widthFix"></image>
-    <button class="cu-btn text-lg lg text-white bg-gradientBlue loginBtn" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">登录</button>
+    <button class="cu-btn text-lg lg text-white bg-gradientBlue loginBtn" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录，获取更多投票相关服务</button>
   </view>
 </view>
