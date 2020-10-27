@@ -15,7 +15,7 @@
     "pages/vote/voteDetail/index",
     "pages/my/myVote/index",
     "pages/vote/createVote/rankList/rankList",
-    "pages/vote/voteSuccess/voteSuccess"
+    "pages/vote/voteSuccess/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
