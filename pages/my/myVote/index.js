@@ -52,6 +52,9 @@ Page({
       isMyCreate:this.data.isMyCreate
     }
     queryVoteList(params).then(res=>{
+      res.length && res.map(val=>{
+        
+      })
       let newArr = this.data.listData.concat(res)
       this.setData({
         listData:newArr

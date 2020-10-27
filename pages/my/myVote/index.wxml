@@ -19,10 +19,10 @@
             <text>{{item.status==1?'已开始':item.status==2 ? '停止':'删除'}}</text>
           </view>
           <view>
-              <text>参与人数 0 总票数0</text>
+              <text>参与人数 {{item.partNumber}} 总票数{{item.totalVote}}</text>
           </view>
           <view>
-              <text>{{item.createTime}} 结束</text>
+              <text>{{item.endTime}} 结束</text>
           </view>
         </view>
       </view>

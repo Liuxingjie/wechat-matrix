@@ -47,3 +47,13 @@ export const getVoteDetail = (params) => {
     }
   );
 }
+
+// 开始投票
+export const startVote = (params) => {
+  return ComRequest.fetch(
+    `/vote/startVote`,
+    params,
+    {
+    }
+  );
+}
