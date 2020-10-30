@@ -4,9 +4,9 @@
   <image class="header_img" src="//www.xiangmx.top/images/manage_top.png"></image>
 
   <view class="titleBox">
-    <view>参赛名称</view>
+    <view>{{totalData.title}}</view>
     <view class="timer">
-      <text>2020.02.02</text> <text>15:00开始</text>
+      <text>{{totalData.startTime}}</text> <text>开始</text>
     </view>
   </view>
 
